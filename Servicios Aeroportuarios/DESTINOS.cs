@@ -17,7 +17,14 @@ namespace Servicios_Aeroportuarios
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            AEROLÍNEAS aerolineas = new AEROLÍNEAS();
+            this.Hide();
+            aerolineas.ShowDialog();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
         {
             Form1 datos = new Form1();
             this.Hide();
