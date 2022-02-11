@@ -58,6 +58,7 @@
             this.btnSiguiente.TabIndex = 1;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnRegresar
             // 
@@ -68,7 +69,7 @@
             this.btnRegresar.TabIndex = 2;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.button2_Click);
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // rbtEaChile
             // 
