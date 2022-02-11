@@ -10,19 +10,18 @@ using System.Windows.Forms;
 
 namespace Servicios_Aeroportuarios
 {
-    public partial class Form1 : Form
+    public partial class DESTINOS : Form
     {
-        public Form1()
+        public DESTINOS()
         {
             InitializeComponent();
         }
 
-        private void btnSiguiente_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            DESTINOS destino = new DESTINOS();
+            Form1 datos = new Form1();
             this.Hide();
-            destino.ShowDialog();
-            
+            datos.ShowDialog();
         }
     }
 }
