@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AEROLÍNEAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEROLÍNEAS.Designer.cs">
+      <DependentUpon>AEROLÍNEAS.cs</DependentUpon>
+    </Compile>
     <Compile Include="DESTINOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AEROLÍNEAS.resx">
+      <DependentUpon>AEROLÍNEAS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DESTINOS.resx">
       <DependentUpon>DESTINOS.cs</DependentUpon>
     </EmbeddedResource>
