@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Servicios_Aeroportuarios
 {
-    public partial class AEROLÍNEAS : Form
+    public partial class FACTURA : Form
     {
-        public AEROLÍNEAS()
+        public FACTURA()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DESTINOS destinos = new DESTINOS();
+            this.Hide();
+            destinos.Show();
         }
     }
 }

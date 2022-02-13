@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AEROLÍNEAS.cs">
+    <Compile Include="FACTURA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AEROLÍNEAS.Designer.cs">
-      <DependentUpon>AEROLÍNEAS.cs</DependentUpon>
+    <Compile Include="FACTURA.Designer.cs">
+      <DependentUpon>FACTURA.cs</DependentUpon>
     </Compile>
     <Compile Include="DESTINOS.cs">
       <SubType>Form</SubType>
@@ -66,8 +66,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AEROLÍNEAS.resx">
-      <DependentUpon>AEROLÍNEAS.cs</DependentUpon>
+    <EmbeddedResource Include="FACTURA.resx">
+      <DependentUpon>FACTURA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DESTINOS.resx">
       <DependentUpon>DESTINOS.cs</DependentUpon>
