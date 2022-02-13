@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AEROLÍNEAS.cs">
+    <Compile Include="FACTURA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AEROLÍNEAS.Designer.cs">
-      <DependentUpon>AEROLÍNEAS.cs</DependentUpon>
+    <Compile Include="FACTURA.Designer.cs">
+      <DependentUpon>FACTURA.cs</DependentUpon>
     </Compile>
     <Compile Include="DESTINOS.cs">
       <SubType>Form</SubType>
@@ -58,22 +58,22 @@
     <Compile Include="DESTINOS.Designer.cs">
       <DependentUpon>DESTINOS.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="DATOS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="DATOS.Designer.cs">
+      <DependentUpon>DATOS.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AEROLÍNEAS.resx">
-      <DependentUpon>AEROLÍNEAS.cs</DependentUpon>
+    <EmbeddedResource Include="FACTURA.resx">
+      <DependentUpon>FACTURA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DESTINOS.resx">
       <DependentUpon>DESTINOS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="DATOS.resx">
+      <DependentUpon>DATOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

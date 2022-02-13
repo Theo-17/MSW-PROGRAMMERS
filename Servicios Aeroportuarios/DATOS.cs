@@ -24,5 +24,10 @@ namespace Servicios_Aeroportuarios
             destino.ShowDialog();
             
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
