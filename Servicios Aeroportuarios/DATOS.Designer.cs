@@ -62,7 +62,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(894, 845);
+            this.btnSiguiente.Location = new System.Drawing.Point(835, 655);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(169, 43);
             this.btnSiguiente.TabIndex = 0;
@@ -276,7 +276,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(34, 662);
+            this.button1.Location = new System.Drawing.Point(309, 746);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 31);
             this.button1.TabIndex = 23;
@@ -285,7 +285,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(34, 708);
+            this.richTextBox1.Location = new System.Drawing.Point(156, 596);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(484, 144);
             this.richTextBox1.TabIndex = 24;
@@ -294,11 +294,11 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(34, 858);
+            this.button2.Location = new System.Drawing.Point(281, 560);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(225, 30);
             this.button2.TabIndex = 25;
-            this.button2.Text = "INGRESAR NUEVAMENTE";
+            this.button2.Text = "GUARDAR DATOS";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // label13
