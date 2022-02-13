@@ -19,7 +19,7 @@ namespace Servicios_Aeroportuarios
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            AEROLÍNEAS aerolineas = new AEROLÍNEAS();
+            FACTURA aerolineas = new FACTURA();
             this.Hide();
             aerolineas.ShowDialog();
         }
