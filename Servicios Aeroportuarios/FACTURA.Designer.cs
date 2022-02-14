@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FACTURA));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnRegresar3 = new System.Windows.Forms.Button();
             this.btnNuevaCompra = new System.Windows.Forms.Button();
@@ -46,11 +47,15 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.txtAsiento = new System.Windows.Forms.TextBox();
             this.lblSeat = new System.Windows.Forms.Label();
-            this.txtPasaport = new System.Windows.Forms.TextBox();
+            this.txtVuelo = new System.Windows.Forms.TextBox();
             this.txtTill = new System.Windows.Forms.TextBox();
-            this.lblPasaport = new System.Windows.Forms.Label();
+            this.lblVuelo = new System.Windows.Forms.Label();
             this.lblTill = new System.Windows.Forms.Label();
             this.rtbDatoTotal = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -75,7 +80,7 @@
             // 
             // btnNuevaCompra
             // 
-            this.btnNuevaCompra.Location = new System.Drawing.Point(146, 320);
+            this.btnNuevaCompra.Location = new System.Drawing.Point(466, 325);
             this.btnNuevaCompra.Name = "btnNuevaCompra";
             this.btnNuevaCompra.Size = new System.Drawing.Size(145, 32);
             this.btnNuevaCompra.TabIndex = 2;
@@ -211,13 +216,13 @@
             this.lblSeat.TabIndex = 17;
             this.lblSeat.Text = "Asiento/Seat";
             // 
-            // txtPasaport
+            // txtVuelo
             // 
-            this.txtPasaport.Enabled = false;
-            this.txtPasaport.Location = new System.Drawing.Point(353, 111);
-            this.txtPasaport.Name = "txtPasaport";
-            this.txtPasaport.Size = new System.Drawing.Size(98, 20);
-            this.txtPasaport.TabIndex = 18;
+            this.txtVuelo.Enabled = false;
+            this.txtVuelo.Location = new System.Drawing.Point(353, 111);
+            this.txtVuelo.Name = "txtVuelo";
+            this.txtVuelo.Size = new System.Drawing.Size(98, 20);
+            this.txtVuelo.TabIndex = 18;
             // 
             // txtTill
             // 
@@ -227,14 +232,14 @@
             this.txtTill.Size = new System.Drawing.Size(98, 20);
             this.txtTill.TabIndex = 19;
             // 
-            // lblPasaport
+            // lblVuelo
             // 
-            this.lblPasaport.AutoSize = true;
-            this.lblPasaport.Location = new System.Drawing.Point(350, 134);
-            this.lblPasaport.Name = "lblPasaport";
-            this.lblPasaport.Size = new System.Drawing.Size(101, 13);
-            this.lblPasaport.TabIndex = 20;
-            this.lblPasaport.Text = "Pasaporte/Passport";
+            this.lblVuelo.AutoSize = true;
+            this.lblVuelo.Location = new System.Drawing.Point(350, 134);
+            this.lblVuelo.Name = "lblVuelo";
+            this.lblVuelo.Size = new System.Drawing.Size(64, 13);
+            this.lblVuelo.TabIndex = 20;
+            this.lblVuelo.Text = "Vuelo/Flight";
             // 
             // lblTill
             // 
@@ -248,11 +253,31 @@
             // rtbDatoTotal
             // 
             this.rtbDatoTotal.Enabled = false;
-            this.rtbDatoTotal.Location = new System.Drawing.Point(505, 111);
+            this.rtbDatoTotal.Location = new System.Drawing.Point(551, 111);
             this.rtbDatoTotal.Name = "rtbDatoTotal";
-            this.rtbDatoTotal.Size = new System.Drawing.Size(240, 115);
+            this.rtbDatoTotal.Size = new System.Drawing.Size(205, 131);
             this.rtbDatoTotal.TabIndex = 22;
             this.rtbDatoTotal.Text = "";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(457, 111);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 131);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(527, 111);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(6, 136);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
             // 
             // FACTURA
             // 
@@ -260,11 +285,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(781, 369);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rtbDatoTotal);
             this.Controls.Add(this.lblTill);
-            this.Controls.Add(this.lblPasaport);
+            this.Controls.Add(this.lblVuelo);
             this.Controls.Add(this.txtTill);
-            this.Controls.Add(this.txtPasaport);
+            this.Controls.Add(this.txtVuelo);
             this.Controls.Add(this.lblSeat);
             this.Controls.Add(this.txtAsiento);
             this.Controls.Add(this.lblTime);
@@ -285,6 +312,8 @@
             this.Controls.Add(this.lblTitulo);
             this.Name = "FACTURA";
             this.Text = "FACTURA";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,10 +339,12 @@
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.TextBox txtAsiento;
         private System.Windows.Forms.Label lblSeat;
-        private System.Windows.Forms.TextBox txtPasaport;
+        private System.Windows.Forms.TextBox txtVuelo;
         private System.Windows.Forms.TextBox txtTill;
-        private System.Windows.Forms.Label lblPasaport;
+        private System.Windows.Forms.Label lblVuelo;
         private System.Windows.Forms.Label lblTill;
         private System.Windows.Forms.RichTextBox rtbDatoTotal;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
