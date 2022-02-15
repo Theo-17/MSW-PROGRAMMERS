@@ -25,10 +25,6 @@ namespace Servicios_Aeroportuarios
             
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void lblDatos_Click(object sender, EventArgs e)
         {
