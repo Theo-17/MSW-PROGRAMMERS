@@ -30,5 +30,23 @@ namespace Servicios_Aeroportuarios
             this.Hide();
             datos.ShowDialog();
         }
+
+        private void lnkRyanair_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            lnkRyanair.LinkVisited = true;
+            System.Diagnostics.Process.Start("https://www.ryanair.com/fr/fr");
+        }
+
+        private void lnkWizz_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            lnkWizz.LinkVisited = true;
+            System.Diagnostics.Process.Start("https://wizzair.com/#/");
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            lnkEasyJet.LinkVisited = true;
+            System.Diagnostics.Process.Start("https://www.easyjet.com/es");
+        }
     }
 }
