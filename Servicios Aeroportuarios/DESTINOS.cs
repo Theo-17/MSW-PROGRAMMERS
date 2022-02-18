@@ -31,7 +31,7 @@ namespace Servicios_Aeroportuarios
         Aerolinea aerolinea;
 
         int numAsientoArg = 1;
-        int numAsientoChi = 1;
+        int numAsientoChi = 52;
         int numAsientoBra = 1;
         public DESTINOS()
         {
@@ -42,9 +42,8 @@ namespace Servicios_Aeroportuarios
         {
             if (rbtEaChile.Checked == true && numAsientoChi <= 50)
             {
-                aerolinea.asiento = numAsientoArg;
+                aerolinea.asiento = numAsientoChi;
                 aerolinea.aerolinea = "Ryanair (FR)";
-                numAsientoChi++;
                 aerolinea.destino.paisSalida = "Ecuador";
                 aerolinea.destino.paisSalida = "Chile";
                 aerolinea.destino.precio = 336;
@@ -80,7 +79,7 @@ namespace Servicios_Aeroportuarios
         {
             if (rbtEaBrasil.Checked == true && numAsientoBra <= 50)
             {
-                aerolinea.asiento = numAsientoArg;
+                aerolinea.asiento = numAsientoBra;
                 aerolinea.aerolinea = "Wizz Air (W6)";
                 numAsientoBra++;
                 aerolinea.destino.paisSalida = "Ecuador";
