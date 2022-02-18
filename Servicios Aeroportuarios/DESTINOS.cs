@@ -12,13 +12,46 @@ namespace Servicios_Aeroportuarios
 {
     public partial class DESTINOS : Form
     {
+        
+        public struct Aerolinea
+        {
+            public int asiento;
+            public String aerolinea;
+            public Destino destino;
+        }
+
+        public struct Destino
+        {
+            public String paisSalida;
+            public String paisLLegada;
+            public double precio;
+        }
+
+    
+        Aerolinea aerolinea;
+
+        int numAsientoArg = 1;
         public DESTINOS()
         {
             InitializeComponent();
         }
 
+ 
+
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
+            if (rbtEaArgentina.Checked==true)
+            {
+                aerolinea.asiento=numAsientoArg;
+                aerolinea.aerolinea = "easyJet (U2)";
+                numAsientoArg++;
+                aerolinea.destino.paisSalida = "Ecuador";
+                aerolinea.destino.paisSalida = "Argentina";
+
+            }
+            
+            
+            
             FACTURA aerolineas = new FACTURA();
             this.Hide();
             aerolineas.ShowDialog();
