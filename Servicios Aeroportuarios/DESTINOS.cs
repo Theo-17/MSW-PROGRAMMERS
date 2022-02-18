@@ -8,8 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Servicios_Aeroportuarios
 {
+
     public partial class DESTINOS : Form
     {
         
@@ -27,15 +29,35 @@ namespace Servicios_Aeroportuarios
             public double precio;
         }
 
-    
+        int numAsientoArg = 52;
+        int numAsientoChi = 1;
+        int numAsientoBra = 52;
+
         Aerolinea aerolinea;
 
-        int numAsientoArg = 1;
-        int numAsientoChi = 52;
-        int numAsientoBra = 1;
+        
         public DESTINOS()
         {
             InitializeComponent();
+        }
+
+        private void DESTINOS_Load(object sender, EventArgs e)
+        {
+            lblSinAsienArg.Hide();
+            lblSinAsienChi.Hide();
+            lblSinAsienBra.Hide();
+            if (numAsientoArg >50)
+            {
+                lblSinAsienArg.Show();
+            }
+            if (numAsientoChi > 50)
+            {
+                lblSinAsienChi.Show();
+            }
+            if (numAsientoBra > 50)
+            {
+                lblSinAsienBra.Show();
+            }
         }
 
         private void rbtEaChile_CheckedChanged(object sender, EventArgs e)
