@@ -67,6 +67,7 @@
             // 
             // btnSiguiente
             // 
+            this.btnSiguiente.Enabled = false;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.Location = new System.Drawing.Point(770, 631);
             this.btnSiguiente.Name = "btnSiguiente";
@@ -98,6 +99,7 @@
             this.rbtEaChile.TabStop = true;
             this.rbtEaChile.Text = "Salida: Ecuador - Destino: Chile";
             this.rbtEaChile.UseVisualStyleBackColor = true;
+            this.rbtEaChile.CheckedChanged += new System.EventHandler(this.rbtEaChile_CheckedChanged);
             // 
             // rbtEaBrasil
             // 
@@ -110,6 +112,7 @@
             this.rbtEaBrasil.TabStop = true;
             this.rbtEaBrasil.Text = "Salida: Ecuador - Destino: Brasil";
             this.rbtEaBrasil.UseVisualStyleBackColor = true;
+            this.rbtEaBrasil.CheckedChanged += new System.EventHandler(this.rbtEaBrasil_CheckedChanged);
             // 
             // rbtEaArgentina
             // 
@@ -122,6 +125,7 @@
             this.rbtEaArgentina.TabStop = true;
             this.rbtEaArgentina.Text = "Salida: Ecuador - Destino: Argentina";
             this.rbtEaArgentina.UseVisualStyleBackColor = true;
+            this.rbtEaArgentina.CheckedChanged += new System.EventHandler(this.rbtEaArgentina_CheckedChanged);
             // 
             // lblPrecioEaC
             // 

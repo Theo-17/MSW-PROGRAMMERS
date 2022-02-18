@@ -31,27 +31,72 @@ namespace Servicios_Aeroportuarios
         Aerolinea aerolinea;
 
         int numAsientoArg = 1;
+        int numAsientoChi = 1;
+        int numAsientoBra = 1;
         public DESTINOS()
         {
             InitializeComponent();
         }
 
- 
-
-        private void btnSiguiente_Click(object sender, EventArgs e)
+        private void rbtEaChile_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbtEaArgentina.Checked==true)
+            if (rbtEaChile.Checked == true && numAsientoChi <= 50)
             {
-                aerolinea.asiento=numAsientoArg;
+                aerolinea.asiento = numAsientoArg;
+                aerolinea.aerolinea = "Ryanair (FR)";
+                numAsientoChi++;
+                aerolinea.destino.paisSalida = "Ecuador";
+                aerolinea.destino.paisSalida = "Chile";
+                aerolinea.destino.precio = 336;
+                btnSiguiente.Enabled = true;
+            }
+            else
+            {
+                btnSiguiente.Enabled = false;
+            }
+
+        }
+
+        private void rbtEaArgentina_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbtEaArgentina.Checked == true && numAsientoArg <= 50)
+            {
+                aerolinea.asiento = numAsientoArg;
                 aerolinea.aerolinea = "easyJet (U2)";
                 numAsientoArg++;
                 aerolinea.destino.paisSalida = "Ecuador";
                 aerolinea.destino.paisSalida = "Argentina";
-
+                aerolinea.destino.precio = 460;
+                btnSiguiente.Enabled = true;
             }
-            
-            
-            
+            else
+            {
+                btnSiguiente.Enabled = false;
+            }
+
+        }
+
+        private void rbtEaBrasil_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbtEaBrasil.Checked == true && numAsientoBra <= 50)
+            {
+                aerolinea.asiento = numAsientoArg;
+                aerolinea.aerolinea = "Wizz Air (W6)";
+                numAsientoBra++;
+                aerolinea.destino.paisSalida = "Ecuador";
+                aerolinea.destino.paisSalida = "Brasil";
+                aerolinea.destino.precio = 210;
+                btnSiguiente.Enabled = true;
+            }
+            else
+            {
+                btnSiguiente.Enabled = false;
+            }
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+           
             FACTURA aerolineas = new FACTURA();
             this.Hide();
             aerolineas.ShowDialog();
@@ -81,5 +126,7 @@ namespace Servicios_Aeroportuarios
             lnkEasyJet.LinkVisited = true;
             System.Diagnostics.Process.Start("https://www.easyjet.com/es");
         }
+
+        
     }
 }
