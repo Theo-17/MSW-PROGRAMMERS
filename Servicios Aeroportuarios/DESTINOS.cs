@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Servicios_Aeroportuarios
 {
 
@@ -31,9 +30,9 @@ namespace Servicios_Aeroportuarios
 
         int numAsientoArg = 52;
         int numAsientoChi = 1;
-        int numAsientoBra = 52;
+        int numAsientoBra = 1;
 
-        Aerolinea aerolinea;
+        public Aerolinea aerolinea;
 
         
         public DESTINOS()
@@ -84,7 +83,6 @@ namespace Servicios_Aeroportuarios
             {
                 aerolinea.asiento = numAsientoArg;
                 aerolinea.aerolinea = "easyJet (U2)";
-                numAsientoArg++;
                 aerolinea.destino.paisSalida = "Ecuador";
                 aerolinea.destino.paisSalida = "Argentina";
                 aerolinea.destino.precio = 460;
@@ -94,7 +92,6 @@ namespace Servicios_Aeroportuarios
             {
                 btnSiguiente.Enabled = false;
             }
-
         }
 
         private void rbtEaBrasil_CheckedChanged(object sender, EventArgs e)
@@ -103,7 +100,6 @@ namespace Servicios_Aeroportuarios
             {
                 aerolinea.asiento = numAsientoBra;
                 aerolinea.aerolinea = "Wizz Air (W6)";
-                numAsientoBra++;
                 aerolinea.destino.paisSalida = "Ecuador";
                 aerolinea.destino.paisSalida = "Brasil";
                 aerolinea.destino.precio = 210;
@@ -117,10 +113,9 @@ namespace Servicios_Aeroportuarios
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-           
-            FACTURA aerolineas = new FACTURA();
+            FACTURA factura = new FACTURA();
             this.Hide();
-            aerolineas.ShowDialog();
+            factura.ShowDialog();
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
