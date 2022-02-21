@@ -14,25 +14,8 @@ namespace Servicios_Aeroportuarios
     public partial class DESTINOS : Form
     {
         
-        public struct Aerolinea
-        {
-            public int asiento;
-            public String aerolinea;
-            public Destino destino;
-        }
 
-        public struct Destino
-        {
-            public String paisSalida;
-            public String paisLLegada;
-            public double precio;
-        }
-
-        int numAsientoArg = 52;
-        int numAsientoChi = 1;
-        int numAsientoBra = 1;
-
-        public Aerolinea aerolinea;
+        
 
         
         public DESTINOS()
@@ -45,15 +28,15 @@ namespace Servicios_Aeroportuarios
             lblSinAsienArg.Hide();
             lblSinAsienChi.Hide();
             lblSinAsienBra.Hide();
-            if (numAsientoArg >50)
+            if (Variables.numAsientoArg >50)
             {
                 lblSinAsienArg.Show();
             }
-            if (numAsientoChi > 50)
+            if (Variables.numAsientoChi > 50)
             {
                 lblSinAsienChi.Show();
             }
-            if (numAsientoBra > 50)
+            if (Variables.numAsientoBra > 50)
             {
                 lblSinAsienBra.Show();
             }
@@ -61,13 +44,14 @@ namespace Servicios_Aeroportuarios
 
         private void rbtEaChile_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbtEaChile.Checked == true && numAsientoChi <= 50)
+            if (rbtEaChile.Checked == true && Variables.numAsientoChi <= 50)
             {
-                aerolinea.asiento = numAsientoChi;
-                aerolinea.aerolinea = "Ryanair (FR)";
-                aerolinea.destino.paisSalida = "Ecuador";
-                aerolinea.destino.paisSalida = "Chile";
-                aerolinea.destino.precio = 336;
+                
+                Variables.Aerolinea.asiento = Variables.numAsientoChi;
+                Variables.Aerolinea.aerolinea = "Ryanair (FR)";
+                Variables.Destino.paisSalida = "Ecuador";
+                Variables.Destino.paisLLegada = "Chile";
+                Variables.Destino.precio = 336;
                 btnSiguiente.Enabled = true;
             }
             else
@@ -76,12 +60,12 @@ namespace Servicios_Aeroportuarios
             }
 
         }
-
+        /*
         private void rbtEaArgentina_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbtEaArgentina.Checked == true && numAsientoArg <= 50)
+            if (rbtEaArgentina.Checked == true && Variables.numAsientoArg <= 50)
             {
-                aerolinea.asiento = numAsientoArg;
+                aerolinea.asiento = Variables.numAsientoArg;
                 aerolinea.aerolinea = "easyJet (U2)";
                 aerolinea.destino.paisSalida = "Ecuador";
                 aerolinea.destino.paisSalida = "Argentina";
@@ -96,9 +80,9 @@ namespace Servicios_Aeroportuarios
 
         private void rbtEaBrasil_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbtEaBrasil.Checked == true && numAsientoBra <= 50)
+            if (rbtEaBrasil.Checked == true && Variables.numAsientoBra <= 50)
             {
-                aerolinea.asiento = numAsientoBra;
+                aerolinea.asiento = Variables.numAsientoBra;
                 aerolinea.aerolinea = "Wizz Air (W6)";
                 aerolinea.destino.paisSalida = "Ecuador";
                 aerolinea.destino.paisSalida = "Brasil";
@@ -110,7 +94,7 @@ namespace Servicios_Aeroportuarios
                 btnSiguiente.Enabled = false;
             }
         }
-
+        */
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             FACTURA factura = new FACTURA();
