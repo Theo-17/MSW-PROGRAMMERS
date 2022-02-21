@@ -33,6 +33,7 @@ namespace Servicios_Aeroportuarios
             DESTINOS.numAsientoChi = 1;
 
             txtAsiento.AppendText(Convert.ToString(DESTINOS.Info.asiento));
+            txtAerolinea.AppendText(DESTINOS.Info.aerolinea);
             */
 
         }

@@ -50,6 +50,9 @@
             this.lnkEasyJet = new System.Windows.Forms.LinkLabel();
             this.lblInfoEasyJet = new System.Windows.Forms.Label();
             this.lbleasyJet = new System.Windows.Forms.Label();
+            this.lblSinAsienChi = new System.Windows.Forms.Label();
+            this.lblSinAsienBra = new System.Windows.Forms.Label();
+            this.lblSinAsienArg = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbRyanair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWizzAir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEasyJet)).BeginInit();
@@ -98,6 +101,7 @@
             this.rbtEaChile.TabStop = true;
             this.rbtEaChile.Text = "Salida: Ecuador - Destino: Chile";
             this.rbtEaChile.UseVisualStyleBackColor = true;
+            this.rbtEaChile.CheckedChanged += new System.EventHandler(this.rbtEaChile_CheckedChanged);
             // 
             // rbtEaBrasil
             // 
@@ -110,6 +114,7 @@
             this.rbtEaBrasil.TabStop = true;
             this.rbtEaBrasil.Text = "Salida: Ecuador - Destino: Brasil";
             this.rbtEaBrasil.UseVisualStyleBackColor = true;
+            this.rbtEaBrasil.CheckedChanged += new System.EventHandler(this.rbtEaBrasil_CheckedChanged);
             // 
             // rbtEaArgentina
             // 
@@ -122,6 +127,7 @@
             this.rbtEaArgentina.TabStop = true;
             this.rbtEaArgentina.Text = "Salida: Ecuador - Destino: Argentina";
             this.rbtEaArgentina.UseVisualStyleBackColor = true;
+            this.rbtEaArgentina.CheckedChanged += new System.EventHandler(this.rbtEaArgentina_CheckedChanged);
             // 
             // lblPrecioEaC
             // 
@@ -273,12 +279,48 @@
             this.lbleasyJet.TabIndex = 19;
             this.lbleasyJet.Text = "easyJet (U2)";
             // 
+            // lblSinAsienChi
+            // 
+            this.lblSinAsienChi.AutoSize = true;
+            this.lblSinAsienChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSinAsienChi.ForeColor = System.Drawing.Color.Red;
+            this.lblSinAsienChi.Location = new System.Drawing.Point(351, 93);
+            this.lblSinAsienChi.Name = "lblSinAsienChi";
+            this.lblSinAsienChi.Size = new System.Drawing.Size(283, 18);
+            this.lblSinAsienChi.TabIndex = 22;
+            this.lblSinAsienChi.Text = "(NO HAY ASIENTOS DISPONIBLES)";
+            // 
+            // lblSinAsienBra
+            // 
+            this.lblSinAsienBra.AutoSize = true;
+            this.lblSinAsienBra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSinAsienBra.ForeColor = System.Drawing.Color.Red;
+            this.lblSinAsienBra.Location = new System.Drawing.Point(369, 278);
+            this.lblSinAsienBra.Name = "lblSinAsienBra";
+            this.lblSinAsienBra.Size = new System.Drawing.Size(283, 18);
+            this.lblSinAsienBra.TabIndex = 23;
+            this.lblSinAsienBra.Text = "(NO HAY ASIENTOS DISPONIBLES)";
+            // 
+            // lblSinAsienArg
+            // 
+            this.lblSinAsienArg.AutoSize = true;
+            this.lblSinAsienArg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSinAsienArg.ForeColor = System.Drawing.Color.Red;
+            this.lblSinAsienArg.Location = new System.Drawing.Point(401, 457);
+            this.lblSinAsienArg.Name = "lblSinAsienArg";
+            this.lblSinAsienArg.Size = new System.Drawing.Size(283, 18);
+            this.lblSinAsienArg.TabIndex = 24;
+            this.lblSinAsienArg.Text = "(NO HAY ASIENTOS DISPONIBLES)";
+            // 
             // DESTINOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1050, 686);
+            this.Controls.Add(this.lblSinAsienArg);
+            this.Controls.Add(this.lblSinAsienBra);
+            this.Controls.Add(this.lblSinAsienChi);
             this.Controls.Add(this.lnkEasyJet);
             this.Controls.Add(this.lblInfoEasyJet);
             this.Controls.Add(this.lbleasyJet);
@@ -302,6 +344,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Name = "DESTINOS";
             this.Text = "DESTINO Y AEROLÍNEA";
+            this.Load += new System.EventHandler(this.DESTINOS_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pbRyanair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWizzAir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEasyJet)).EndInit();
@@ -333,5 +376,8 @@
         private System.Windows.Forms.LinkLabel lnkEasyJet;
         private System.Windows.Forms.Label lblInfoEasyJet;
         private System.Windows.Forms.Label lbleasyJet;
+        private System.Windows.Forms.Label lblSinAsienChi;
+        private System.Windows.Forms.Label lblSinAsienBra;
+        private System.Windows.Forms.Label lblSinAsienArg;
     }
 }
