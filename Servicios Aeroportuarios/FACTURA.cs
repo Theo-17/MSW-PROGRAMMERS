@@ -23,5 +23,17 @@ namespace Servicios_Aeroportuarios
             this.Hide();
             destinos.Show();
         }
+
+        private void FACTURA_Load(object sender, EventArgs e)
+        {
+            /*
+            DESTINOS.numAsientoArg=1;
+            DESTINOS.numAsientoBra = 1;
+            DESTINOS.numAsientoChi = 1;
+
+            txtAsiento.AppendText(Convert.ToString(DESTINOS.Info.asiento));
+            */
+            
+        }
     }
 }
