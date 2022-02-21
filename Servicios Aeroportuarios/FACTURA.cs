@@ -12,6 +12,7 @@ namespace Servicios_Aeroportuarios
 {
     public partial class FACTURA : Form
     {
+
         public FACTURA()
         {
             InitializeComponent();
@@ -22,6 +23,18 @@ namespace Servicios_Aeroportuarios
             DESTINOS destinos = new DESTINOS();
             this.Hide();
             destinos.Show();
+        }
+
+        private void FACTURA_Load(object sender, EventArgs e)
+        {
+            /*
+            DESTINOS.numAsientoArg=1;
+            DESTINOS.numAsientoBra = 1;
+            DESTINOS.numAsientoChi = 1;
+
+            txtAsiento.AppendText(Convert.ToString(DESTINOS.Info.asiento));
+            */
+
         }
     }
 }
