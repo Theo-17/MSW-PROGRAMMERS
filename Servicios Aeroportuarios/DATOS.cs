@@ -136,7 +136,7 @@ namespace Servicios_Aeroportuarios
             DateTime fecha = dateNacimiento.Value;
             fN.nacimiento = fecha.ToShortDateString();
             MessageBox.Show("Datos Guardados Corectamente", "CONFIRMAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            btnSiguiente.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
