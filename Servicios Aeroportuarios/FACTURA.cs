@@ -84,6 +84,19 @@ namespace Servicios_Aeroportuarios
                 DESTINOS.numAsientoArg++;
             }
 
+            Form1 formaInicial = new Form1();
+            this.Hide();
+            formaInicial.Show();
+
+        }
+
+        private void btnFinalizar_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Estás seguro de cerrar el programa", "CERRAR", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }
