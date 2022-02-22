@@ -62,8 +62,10 @@ namespace Servicios_Aeroportuarios
             fechaVuelo.Value = DateTime.Today.AddDays(10);
             txtDate.AppendText(Convert.ToString(fechaVuelo.Value.ToShortDateString()));
 
-
-
+            rtbDatoTotal.AppendText(Form1.persona.apellido+'/'+Form1.persona.nombre+"\n\nAsiento: "+ 
+                Convert.ToString(DESTINOS.Info.asiento)+'\n'+'\n'+ DESTINOS.Info.destino.paisSalida+'/'+ DESTINOS.Info.destino.paisLLegada +
+                "\n\nHora Salida: "+ txtTime.Text);
+     
         }
 
         private void btnNuevaCompra_Click(object sender, EventArgs e)

@@ -213,9 +213,10 @@
             // rtbDatoTotal
             // 
             this.rtbDatoTotal.Enabled = false;
-            this.rtbDatoTotal.Location = new System.Drawing.Point(551, 111);
+            this.rtbDatoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbDatoTotal.Location = new System.Drawing.Point(551, 102);
             this.rtbDatoTotal.Name = "rtbDatoTotal";
-            this.rtbDatoTotal.Size = new System.Drawing.Size(205, 131);
+            this.rtbDatoTotal.Size = new System.Drawing.Size(210, 146);
             this.rtbDatoTotal.TabIndex = 22;
             this.rtbDatoTotal.Text = "";
             // 
