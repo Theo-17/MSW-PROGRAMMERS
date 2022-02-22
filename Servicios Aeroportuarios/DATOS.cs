@@ -97,8 +97,8 @@ namespace Servicios_Aeroportuarios
 
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
-            txaDescripcion.AppendText("Nombres: " + txtNombres.Text);
-            txaDescripcion.AppendText("Apellidos: " + txtApellidos.Text);
+            txaDescripcion.AppendText("Nombres: " + txtNombres.Text+"\n");
+            txaDescripcion.AppendText("Apellidos: " + txtApellidos.Text+"\n");
         }
     }
 }
