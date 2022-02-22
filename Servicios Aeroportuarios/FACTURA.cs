@@ -36,6 +36,11 @@ namespace Servicios_Aeroportuarios
             txtAerolinea.AppendText(DESTINOS.Info.aerolinea);
             */
 
+
+            txtAsiento.AppendText(Convert.ToString(DESTINOS.Info.asiento));
+            txtAerolinea.AppendText(Convert.ToString(DESTINOS.Info.aerolinea));
+            txtTime.Text = "7:00 am";
+
         }
     }
 }

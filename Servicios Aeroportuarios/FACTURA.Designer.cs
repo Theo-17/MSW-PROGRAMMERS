@@ -45,8 +45,6 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.txtAsiento = new System.Windows.Forms.TextBox();
             this.lblSeat = new System.Windows.Forms.Label();
-            this.txtVuelo = new System.Windows.Forms.TextBox();
-            this.lblVuelo = new System.Windows.Forms.Label();
             this.rtbDatoTotal = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -108,7 +106,7 @@
             this.txtName.Enabled = false;
             this.txtName.Location = new System.Drawing.Point(45, 111);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(302, 20);
+            this.txtName.Size = new System.Drawing.Size(406, 20);
             this.txtName.TabIndex = 5;
             // 
             // txtFrom
@@ -197,23 +195,6 @@
             this.lblSeat.TabIndex = 17;
             this.lblSeat.Text = "Asiento/Seat";
             // 
-            // txtVuelo
-            // 
-            this.txtVuelo.Enabled = false;
-            this.txtVuelo.Location = new System.Drawing.Point(353, 111);
-            this.txtVuelo.Name = "txtVuelo";
-            this.txtVuelo.Size = new System.Drawing.Size(98, 20);
-            this.txtVuelo.TabIndex = 18;
-            // 
-            // lblVuelo
-            // 
-            this.lblVuelo.AutoSize = true;
-            this.lblVuelo.Location = new System.Drawing.Point(350, 134);
-            this.lblVuelo.Name = "lblVuelo";
-            this.lblVuelo.Size = new System.Drawing.Size(64, 13);
-            this.lblVuelo.TabIndex = 20;
-            this.lblVuelo.Text = "Vuelo/Flight";
-            // 
             // rtbDatoTotal
             // 
             this.rtbDatoTotal.Enabled = false;
@@ -269,8 +250,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rtbDatoTotal);
-            this.Controls.Add(this.lblVuelo);
-            this.Controls.Add(this.txtVuelo);
             this.Controls.Add(this.lblSeat);
             this.Controls.Add(this.txtAsiento);
             this.Controls.Add(this.lblTime);
@@ -317,8 +296,6 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.TextBox txtAsiento;
         private System.Windows.Forms.Label lblSeat;
-        private System.Windows.Forms.TextBox txtVuelo;
-        private System.Windows.Forms.Label lblVuelo;
         private System.Windows.Forms.RichTextBox rtbDatoTotal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
