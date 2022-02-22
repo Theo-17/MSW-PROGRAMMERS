@@ -68,5 +68,27 @@ namespace Servicios_Aeroportuarios
         {
             //txaDescripcion.AppendText("Apellidos: " + txtApellidos.Text);
         }
+
+
+        //Declarar variables
+        public struct Persona
+        {
+            public String nombre;
+            public String apellido;
+            public String lugarDeNacimiento;
+            public String correo;
+            public String celular;
+            public String pasaporte;
+            public String sexo;
+
+        }
+
+
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            txaDescripcion.AppendText("Nombres: " + txtNombres.Text);
+            txaDescripcion.AppendText("Apellidos: " + txtApellidos.Text);
+        }
     }
 }
