@@ -38,7 +38,7 @@ namespace Servicios_Aeroportuarios
 
 
             txtAsiento.AppendText(Convert.ToString(DESTINOS.Info.asiento));
-            txtAerolinea.AppendText(Convert.ToString(DESTINOS.Info.aerolinea));
+            txtAerolinea.AppendText(DESTINOS.Info.aerolinea);
             
             
             if (DESTINOS.Info.destino.paisLLegada == "Chile")
@@ -53,7 +53,16 @@ namespace Servicios_Aeroportuarios
             {
                 txtTime.Text = "15:00 pm";
             }
-            
+
+            txtName.AppendText(Form1.persona.nombre+" "+Form1.persona.apellido);
+            txtFrom.AppendText(DESTINOS.Info.destino.paisSalida);
+            txtTo.AppendText(DESTINOS.Info.destino.paisLLegada);
+
+            DateTime fecha = fechaVuelo.Value;
+            fechaVuelo.Value = DateTime.Today.AddDays(10);
+            txtDate.AppendText(Convert.ToString(fechaVuelo.Value.ToShortDateString()));
+
+
 
         }
 
