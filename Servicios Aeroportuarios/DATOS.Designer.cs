@@ -304,6 +304,7 @@
             this.btnGuardar.TabIndex = 25;
             this.btnGuardar.Text = "GUARDAR DATOS";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // lblEmail
             // 
