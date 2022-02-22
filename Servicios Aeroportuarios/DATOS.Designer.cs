@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.lblDatos = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
@@ -59,10 +60,12 @@
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSiguiente
             // 
+            this.btnSiguiente.Enabled = false;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.Location = new System.Drawing.Point(796, 608);
             this.btnSiguiente.Name = "btnSiguiente";
@@ -373,12 +376,24 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(741, 589);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(279, 16);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "CONFIRME DATOS PARA CONTINUAR";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1075, 788);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCelular);
@@ -410,6 +425,7 @@
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblDatos);
             this.Controls.Add(this.btnSiguiente);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "DATOS";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -451,6 +467,7 @@
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Label label1;
     }
 }
 

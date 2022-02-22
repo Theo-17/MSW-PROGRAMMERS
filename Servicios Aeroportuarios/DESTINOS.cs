@@ -14,7 +14,7 @@ namespace Servicios_Aeroportuarios
     public partial class DESTINOS : Form
     {
         static public int numAsientoArg = 1;
-        static public int numAsientoChi = 51;
+        static public int numAsientoChi = 1;
         static public int numAsientoBra = 1;
 
         public struct Destino
