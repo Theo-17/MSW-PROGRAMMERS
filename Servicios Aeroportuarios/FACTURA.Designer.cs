@@ -69,7 +69,7 @@
             // btnRegresar3
             // 
             this.btnRegresar3.Location = new System.Drawing.Point(16, 400);
-            this.btnRegresar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegresar3.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar3.Name = "btnRegresar3";
             this.btnRegresar3.Size = new System.Drawing.Size(168, 39);
             this.btnRegresar3.TabIndex = 1;
@@ -80,7 +80,7 @@
             // btnNuevaCompra
             // 
             this.btnNuevaCompra.Location = new System.Drawing.Point(621, 400);
-            this.btnNuevaCompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevaCompra.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevaCompra.Name = "btnNuevaCompra";
             this.btnNuevaCompra.Size = new System.Drawing.Size(193, 39);
             this.btnNuevaCompra.TabIndex = 2;
@@ -91,7 +91,7 @@
             // btnFinalizar
             // 
             this.btnFinalizar.Location = new System.Drawing.Point(823, 400);
-            this.btnFinalizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFinalizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(171, 39);
             this.btnFinalizar.TabIndex = 3;
@@ -115,7 +115,7 @@
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.Location = new System.Drawing.Point(60, 137);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(540, 23);
             this.txtName.TabIndex = 5;
@@ -126,7 +126,7 @@
             this.txtFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFrom.ForeColor = System.Drawing.Color.Black;
             this.txtFrom.Location = new System.Drawing.Point(60, 196);
-            this.txtFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFrom.Margin = new System.Windows.Forms.Padding(4);
             this.txtFrom.Name = "txtFrom";
             this.txtFrom.Size = new System.Drawing.Size(155, 23);
             this.txtFrom.TabIndex = 6;
@@ -138,7 +138,7 @@
             this.txtTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTo.ForeColor = System.Drawing.Color.Black;
             this.txtTo.Location = new System.Drawing.Point(60, 254);
-            this.txtTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTo.Name = "txtTo";
             this.txtTo.Size = new System.Drawing.Size(155, 23);
             this.txtTo.TabIndex = 7;
@@ -169,7 +169,7 @@
             this.txtAerolinea.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAerolinea.ForeColor = System.Drawing.Color.Black;
             this.txtAerolinea.Location = new System.Drawing.Point(224, 196);
-            this.txtAerolinea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAerolinea.Margin = new System.Windows.Forms.Padding(4);
             this.txtAerolinea.Name = "txtAerolinea";
             this.txtAerolinea.Size = new System.Drawing.Size(237, 23);
             this.txtAerolinea.TabIndex = 10;
@@ -190,7 +190,7 @@
             this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.ForeColor = System.Drawing.Color.Black;
             this.txtDate.Location = new System.Drawing.Point(224, 254);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(4);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(187, 23);
             this.txtDate.TabIndex = 12;
@@ -212,7 +212,7 @@
             this.txtAsiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAsiento.ForeColor = System.Drawing.Color.Black;
             this.txtAsiento.Location = new System.Drawing.Point(471, 196);
-            this.txtAsiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAsiento.Margin = new System.Windows.Forms.Padding(4);
             this.txtAsiento.Name = "txtAsiento";
             this.txtAsiento.Size = new System.Drawing.Size(129, 23);
             this.txtAsiento.TabIndex = 16;
@@ -232,7 +232,7 @@
             this.rtbDatoTotal.Enabled = false;
             this.rtbDatoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbDatoTotal.Location = new System.Drawing.Point(735, 126);
-            this.rtbDatoTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtbDatoTotal.Margin = new System.Windows.Forms.Padding(4);
             this.rtbDatoTotal.Name = "rtbDatoTotal";
             this.rtbDatoTotal.Size = new System.Drawing.Size(279, 179);
             this.rtbDatoTotal.TabIndex = 22;
@@ -242,7 +242,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(609, 137);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(65, 161);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -253,7 +253,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(703, 137);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(6, 136);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -266,7 +266,7 @@
             this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTime.ForeColor = System.Drawing.Color.Black;
             this.txtTime.Location = new System.Drawing.Point(420, 254);
-            this.txtTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTime.Margin = new System.Windows.Forms.Padding(4);
             this.txtTime.Name = "txtTime";
             this.txtTime.Size = new System.Drawing.Size(180, 23);
             this.txtTime.TabIndex = 14;
@@ -284,7 +284,7 @@
             // fechaVuelo
             // 
             this.fechaVuelo.Location = new System.Drawing.Point(60, 82);
-            this.fechaVuelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fechaVuelo.Margin = new System.Windows.Forms.Padding(4);
             this.fechaVuelo.Name = "fechaVuelo";
             this.fechaVuelo.Size = new System.Drawing.Size(265, 22);
             this.fechaVuelo.TabIndex = 25;
@@ -319,8 +319,9 @@
             this.Controls.Add(this.btnRegresar3);
             this.Controls.Add(this.lblTitulo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FACTURA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FACTURA";
             this.Load += new System.EventHandler(this.FACTURA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -344,6 +344,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DESTINOS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DESTINO Y AEROLÍNEA";
             this.Load += new System.EventHandler(this.DESTINOS_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pbRyanair)).EndInit();
