@@ -99,6 +99,30 @@ namespace Servicios_Aeroportuarios
         {
             txaDescripcion.AppendText("Nombres: " + txtNombres.Text+"\n");
             txaDescripcion.AppendText("Apellidos: " + txtApellidos.Text+"\n");
+            txaDescripcion.AppendText("Pasaporte: " + txtPasaporte.Text + "\n");
+            txaDescripcion.AppendText("Lugar de nacimiento: ECU," + txtLugar.Text + "\n");
+            txaDescripcion.AppendText("cell: " + txtCelular.Text + "\n");
+            txaDescripcion.AppendText("Email: " + txtEmail.Text + "\n");
+            txaDescripcion.AppendText("Sexo: "+persona.sexo+"\n");
+            DateTime fecha = dateNacimiento.Value;
+ 
+        }
+
+        private void rbtM_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbtM.Checked == true)
+            {
+                persona.sexo = "Masculino";
+            }
+        }
+
+        private void rbtF_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rbtM.Checked == true)
+            {
+                persona.sexo = "Femenino";
+            }
+
         }
     }
 }

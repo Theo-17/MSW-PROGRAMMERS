@@ -35,7 +35,7 @@
             this.lblPasaporte = new System.Windows.Forms.Label();
             this.lblP = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPasaporte = new System.Windows.Forms.TextBox();
             this.lblApellidos = new System.Windows.Forms.Label();
             this.lblNombres = new System.Windows.Forms.Label();
             this.txtApellidos = new System.Windows.Forms.TextBox();
@@ -130,13 +130,13 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "ECU      A65452098";
             // 
-            // textBox1
+            // txtPasaporte
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(778, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 28);
-            this.textBox1.TabIndex = 8;
+            this.txtPasaporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasaporte.Location = new System.Drawing.Point(778, 122);
+            this.txtPasaporte.Name = "txtPasaporte";
+            this.txtPasaporte.Size = new System.Drawing.Size(153, 28);
+            this.txtPasaporte.TabIndex = 8;
             // 
             // lblApellidos
             // 
@@ -264,6 +264,7 @@
             this.rbtM.TabStop = true;
             this.rbtM.Text = "M";
             this.rbtM.UseVisualStyleBackColor = true;
+            this.rbtM.CheckedChanged += new System.EventHandler(this.rbtM_CheckedChanged);
             // 
             // rbtF
             // 
@@ -276,6 +277,7 @@
             this.rbtF.TabStop = true;
             this.rbtF.Text = "F";
             this.rbtF.UseVisualStyleBackColor = true;
+            this.rbtF.CheckedChanged += new System.EventHandler(this.rbtF_CheckedChanged);
             // 
             // btnConfirmar
             // 
@@ -369,7 +371,7 @@
             this.Controls.Add(this.txtApellidos);
             this.Controls.Add(this.lblNombres);
             this.Controls.Add(this.lblApellidos);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPasaporte);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblP);
             this.Controls.Add(this.lblPasaporte);
@@ -393,7 +395,7 @@
         private System.Windows.Forms.Label lblPasaporte;
         private System.Windows.Forms.Label lblP;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPasaporte;
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.Label lblNombres;
         private System.Windows.Forms.TextBox txtApellidos;
