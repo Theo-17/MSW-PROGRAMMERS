@@ -50,6 +50,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtTime = new System.Windows.Forms.TextBox();
             this.lblTime = new System.Windows.Forms.Label();
+            this.fechaVuelo = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -257,12 +258,21 @@
             this.lblTime.TabIndex = 15;
             this.lblTime.Text = "Hora/Time";
             // 
+            // fechaVuelo
+            // 
+            this.fechaVuelo.Location = new System.Drawing.Point(45, 67);
+            this.fechaVuelo.Name = "fechaVuelo";
+            this.fechaVuelo.Size = new System.Drawing.Size(200, 20);
+            this.fechaVuelo.TabIndex = 25;
+            this.fechaVuelo.Visible = false;
+            // 
             // FACTURA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(781, 369);
+            this.Controls.Add(this.fechaVuelo);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rtbDatoTotal);
@@ -317,5 +327,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.DateTimePicker fechaVuelo;
     }
 }
