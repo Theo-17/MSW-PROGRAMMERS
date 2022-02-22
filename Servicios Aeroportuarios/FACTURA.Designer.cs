@@ -59,17 +59,19 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Broadway", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(136, 9);
+            this.lblTitulo.Location = new System.Drawing.Point(181, 11);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(547, 55);
+            this.lblTitulo.Size = new System.Drawing.Size(680, 68);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "PASE DE ABORDAJE";
             // 
             // btnRegresar3
             // 
-            this.btnRegresar3.Location = new System.Drawing.Point(12, 325);
+            this.btnRegresar3.Location = new System.Drawing.Point(16, 400);
+            this.btnRegresar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegresar3.Name = "btnRegresar3";
-            this.btnRegresar3.Size = new System.Drawing.Size(126, 32);
+            this.btnRegresar3.Size = new System.Drawing.Size(168, 39);
             this.btnRegresar3.TabIndex = 1;
             this.btnRegresar3.Text = "Regresar";
             this.btnRegresar3.UseVisualStyleBackColor = true;
@@ -77,9 +79,10 @@
             // 
             // btnNuevaCompra
             // 
-            this.btnNuevaCompra.Location = new System.Drawing.Point(466, 325);
+            this.btnNuevaCompra.Location = new System.Drawing.Point(621, 400);
+            this.btnNuevaCompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNuevaCompra.Name = "btnNuevaCompra";
-            this.btnNuevaCompra.Size = new System.Drawing.Size(145, 32);
+            this.btnNuevaCompra.Size = new System.Drawing.Size(193, 39);
             this.btnNuevaCompra.TabIndex = 2;
             this.btnNuevaCompra.Text = "Iniciar Nueva Compra";
             this.btnNuevaCompra.UseVisualStyleBackColor = true;
@@ -87,9 +90,10 @@
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.Location = new System.Drawing.Point(617, 325);
+            this.btnFinalizar.Location = new System.Drawing.Point(823, 400);
+            this.btnFinalizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(128, 32);
+            this.btnFinalizar.Size = new System.Drawing.Size(171, 39);
             this.btnFinalizar.TabIndex = 3;
             this.btnFinalizar.Text = "Finalizar";
             this.btnFinalizar.UseVisualStyleBackColor = true;
@@ -98,9 +102,10 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(42, 134);
+            this.lblName.Location = new System.Drawing.Point(56, 165);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(77, 13);
+            this.lblName.Size = new System.Drawing.Size(97, 16);
             this.lblName.TabIndex = 4;
             this.lblName.Text = "Nombre/Name";
             // 
@@ -109,9 +114,10 @@
             this.txtName.Enabled = false;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.Black;
-            this.txtName.Location = new System.Drawing.Point(45, 111);
+            this.txtName.Location = new System.Drawing.Point(60, 137);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(406, 20);
+            this.txtName.Size = new System.Drawing.Size(540, 23);
             this.txtName.TabIndex = 5;
             // 
             // txtFrom
@@ -119,9 +125,10 @@
             this.txtFrom.Enabled = false;
             this.txtFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFrom.ForeColor = System.Drawing.Color.Black;
-            this.txtFrom.Location = new System.Drawing.Point(45, 159);
+            this.txtFrom.Location = new System.Drawing.Point(60, 196);
+            this.txtFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFrom.Name = "txtFrom";
-            this.txtFrom.Size = new System.Drawing.Size(117, 20);
+            this.txtFrom.Size = new System.Drawing.Size(155, 23);
             this.txtFrom.TabIndex = 6;
             this.txtFrom.TabStop = false;
             // 
@@ -130,26 +137,29 @@
             this.txtTo.Enabled = false;
             this.txtTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTo.ForeColor = System.Drawing.Color.Black;
-            this.txtTo.Location = new System.Drawing.Point(45, 206);
+            this.txtTo.Location = new System.Drawing.Point(60, 254);
+            this.txtTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTo.Name = "txtTo";
-            this.txtTo.Size = new System.Drawing.Size(117, 20);
+            this.txtTo.Size = new System.Drawing.Size(155, 23);
             this.txtTo.TabIndex = 7;
             // 
             // lblFrom
             // 
             this.lblFrom.AutoSize = true;
-            this.lblFrom.Location = new System.Drawing.Point(42, 182);
+            this.lblFrom.Location = new System.Drawing.Point(56, 224);
+            this.lblFrom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFrom.Name = "lblFrom";
-            this.lblFrom.Size = new System.Drawing.Size(66, 13);
+            this.lblFrom.Size = new System.Drawing.Size(83, 16);
             this.lblFrom.TabIndex = 8;
             this.lblFrom.Text = "Desde/From";
             // 
             // lblTo
             // 
             this.lblTo.AutoSize = true;
-            this.lblTo.Location = new System.Drawing.Point(42, 229);
+            this.lblTo.Location = new System.Drawing.Point(56, 282);
+            this.lblTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTo.Name = "lblTo";
-            this.lblTo.Size = new System.Drawing.Size(32, 13);
+            this.lblTo.Size = new System.Drawing.Size(37, 16);
             this.lblTo.TabIndex = 9;
             this.lblTo.Text = "A/To";
             // 
@@ -158,17 +168,19 @@
             this.txtAerolinea.Enabled = false;
             this.txtAerolinea.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAerolinea.ForeColor = System.Drawing.Color.Black;
-            this.txtAerolinea.Location = new System.Drawing.Point(168, 159);
+            this.txtAerolinea.Location = new System.Drawing.Point(224, 196);
+            this.txtAerolinea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAerolinea.Name = "txtAerolinea";
-            this.txtAerolinea.Size = new System.Drawing.Size(179, 20);
+            this.txtAerolinea.Size = new System.Drawing.Size(237, 23);
             this.txtAerolinea.TabIndex = 10;
             // 
             // lblAerolinea
             // 
             this.lblAerolinea.AutoSize = true;
-            this.lblAerolinea.Location = new System.Drawing.Point(165, 182);
+            this.lblAerolinea.Location = new System.Drawing.Point(220, 224);
+            this.lblAerolinea.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAerolinea.Name = "lblAerolinea";
-            this.lblAerolinea.Size = new System.Drawing.Size(88, 13);
+            this.lblAerolinea.Size = new System.Drawing.Size(109, 16);
             this.lblAerolinea.TabIndex = 11;
             this.lblAerolinea.Text = "Aerolínea/Carrier";
             // 
@@ -177,17 +189,19 @@
             this.txtDate.Enabled = false;
             this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.ForeColor = System.Drawing.Color.Black;
-            this.txtDate.Location = new System.Drawing.Point(168, 206);
+            this.txtDate.Location = new System.Drawing.Point(224, 254);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(141, 20);
+            this.txtDate.Size = new System.Drawing.Size(187, 23);
             this.txtDate.TabIndex = 12;
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(165, 229);
+            this.lblDate.Location = new System.Drawing.Point(220, 282);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(65, 13);
+            this.lblDate.Size = new System.Drawing.Size(78, 16);
             this.lblDate.TabIndex = 13;
             this.lblDate.Text = "Fecha/Date";
             // 
@@ -197,17 +211,19 @@
             this.txtAsiento.Enabled = false;
             this.txtAsiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAsiento.ForeColor = System.Drawing.Color.Black;
-            this.txtAsiento.Location = new System.Drawing.Point(353, 159);
+            this.txtAsiento.Location = new System.Drawing.Point(471, 196);
+            this.txtAsiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAsiento.Name = "txtAsiento";
-            this.txtAsiento.Size = new System.Drawing.Size(98, 20);
+            this.txtAsiento.Size = new System.Drawing.Size(129, 23);
             this.txtAsiento.TabIndex = 16;
             // 
             // lblSeat
             // 
             this.lblSeat.AutoSize = true;
-            this.lblSeat.Location = new System.Drawing.Point(350, 182);
+            this.lblSeat.Location = new System.Drawing.Point(467, 224);
+            this.lblSeat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSeat.Name = "lblSeat";
-            this.lblSeat.Size = new System.Drawing.Size(69, 13);
+            this.lblSeat.Size = new System.Drawing.Size(84, 16);
             this.lblSeat.TabIndex = 17;
             this.lblSeat.Text = "Asiento/Seat";
             // 
@@ -215,18 +231,20 @@
             // 
             this.rtbDatoTotal.Enabled = false;
             this.rtbDatoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbDatoTotal.Location = new System.Drawing.Point(551, 102);
+            this.rtbDatoTotal.Location = new System.Drawing.Point(735, 126);
+            this.rtbDatoTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rtbDatoTotal.Name = "rtbDatoTotal";
-            this.rtbDatoTotal.Size = new System.Drawing.Size(210, 146);
+            this.rtbDatoTotal.Size = new System.Drawing.Size(279, 179);
             this.rtbDatoTotal.TabIndex = 22;
             this.rtbDatoTotal.Text = "";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(457, 111);
+            this.pictureBox1.Location = new System.Drawing.Point(609, 137);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 131);
+            this.pictureBox1.Size = new System.Drawing.Size(65, 161);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
@@ -234,7 +252,8 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(527, 111);
+            this.pictureBox2.Location = new System.Drawing.Point(703, 137);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(6, 136);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -246,34 +265,37 @@
             this.txtTime.Enabled = false;
             this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTime.ForeColor = System.Drawing.Color.Black;
-            this.txtTime.Location = new System.Drawing.Point(315, 206);
+            this.txtTime.Location = new System.Drawing.Point(420, 254);
+            this.txtTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(136, 20);
+            this.txtTime.Size = new System.Drawing.Size(180, 23);
             this.txtTime.TabIndex = 14;
             // 
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(312, 229);
+            this.lblTime.Location = new System.Drawing.Point(416, 282);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(58, 13);
+            this.lblTime.Size = new System.Drawing.Size(72, 16);
             this.lblTime.TabIndex = 15;
             this.lblTime.Text = "Hora/Time";
             // 
             // fechaVuelo
             // 
-            this.fechaVuelo.Location = new System.Drawing.Point(45, 67);
+            this.fechaVuelo.Location = new System.Drawing.Point(60, 82);
+            this.fechaVuelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fechaVuelo.Name = "fechaVuelo";
-            this.fechaVuelo.Size = new System.Drawing.Size(200, 20);
+            this.fechaVuelo.Size = new System.Drawing.Size(265, 22);
             this.fechaVuelo.TabIndex = 25;
             this.fechaVuelo.Visible = false;
             // 
             // FACTURA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(781, 369);
+            this.ClientSize = new System.Drawing.Size(1041, 454);
             this.Controls.Add(this.fechaVuelo);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -296,6 +318,8 @@
             this.Controls.Add(this.btnNuevaCompra);
             this.Controls.Add(this.btnRegresar3);
             this.Controls.Add(this.lblTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FACTURA";
             this.Text = "FACTURA";
             this.Load += new System.EventHandler(this.FACTURA_Load);
