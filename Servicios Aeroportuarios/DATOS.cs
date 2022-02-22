@@ -70,7 +70,7 @@ namespace Servicios_Aeroportuarios
         }
 
 
-        //Declarar variables
+        //Declarar variables **************************************************
         public struct Persona
         {
             public String nombre;
@@ -82,6 +82,16 @@ namespace Servicios_Aeroportuarios
             public String sexo;
 
         }
+        public struct Fecha
+        {
+            public String dia;
+            public String mes;
+            public String año;
+        }
+        static public Persona persona;
+        static public Fecha fecha;
+
+
 
 
 
