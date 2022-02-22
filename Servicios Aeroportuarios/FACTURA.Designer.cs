@@ -82,6 +82,7 @@
             this.btnNuevaCompra.TabIndex = 2;
             this.btnNuevaCompra.Text = "Iniciar Nueva Compra";
             this.btnNuevaCompra.UseVisualStyleBackColor = true;
+            this.btnNuevaCompra.Click += new System.EventHandler(this.btnNuevaCompra_Click);
             // 
             // btnFinalizar
             // 
