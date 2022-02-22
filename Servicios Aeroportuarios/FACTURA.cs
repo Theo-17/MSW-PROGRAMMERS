@@ -36,6 +36,43 @@ namespace Servicios_Aeroportuarios
             txtAerolinea.AppendText(DESTINOS.Info.aerolinea);
             */
 
+
+            txtAsiento.AppendText(Convert.ToString(DESTINOS.Info.asiento));
+            txtAerolinea.AppendText(Convert.ToString(DESTINOS.Info.aerolinea));
+            
+            
+            if (DESTINOS.Info.destino.paisLLegada == "Chile")
+            {
+                txtTime.Text = "7:00 am";
+            }
+            if (DESTINOS.Info.destino.paisLLegada == "Brasil")
+            {
+                txtTime.Text = "11:00 am";
+            }
+            if (DESTINOS.Info.destino.paisLLegada == "Argentina")
+            {
+                txtTime.Text = "15:00 pm";
+            }
+            
+
+        }
+
+        private void btnNuevaCompra_Click(object sender, EventArgs e)
+        {
+    
+            if (DESTINOS.Info.destino.paisLLegada == "Chile")
+            {
+                DESTINOS.numAsientoChi++;
+            }
+            if (DESTINOS.Info.destino.paisLLegada == "Brasil")
+            {
+                DESTINOS.numAsientoBra++;
+            }
+            if (DESTINOS.Info.destino.paisLLegada == "Argentina")
+            {
+                DESTINOS.numAsientoArg++;
+            }
+
         }
     }
 }

@@ -43,17 +43,13 @@
             this.lblAerolinea = new System.Windows.Forms.Label();
             this.txtDate = new System.Windows.Forms.TextBox();
             this.lblDate = new System.Windows.Forms.Label();
-            this.txtTime = new System.Windows.Forms.TextBox();
-            this.lblTime = new System.Windows.Forms.Label();
             this.txtAsiento = new System.Windows.Forms.TextBox();
             this.lblSeat = new System.Windows.Forms.Label();
-            this.txtVuelo = new System.Windows.Forms.TextBox();
-            this.txtTill = new System.Windows.Forms.TextBox();
-            this.lblVuelo = new System.Windows.Forms.Label();
-            this.lblTill = new System.Windows.Forms.Label();
             this.rtbDatoTotal = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtTime = new System.Windows.Forms.TextBox();
+            this.lblTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -62,19 +58,17 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Broadway", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(181, 11);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitulo.Location = new System.Drawing.Point(136, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(680, 68);
+            this.lblTitulo.Size = new System.Drawing.Size(547, 55);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "PASE DE ABORDAJE";
             // 
             // btnRegresar3
             // 
-            this.btnRegresar3.Location = new System.Drawing.Point(16, 394);
-            this.btnRegresar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegresar3.Location = new System.Drawing.Point(12, 325);
             this.btnRegresar3.Name = "btnRegresar3";
-            this.btnRegresar3.Size = new System.Drawing.Size(171, 39);
+            this.btnRegresar3.Size = new System.Drawing.Size(126, 32);
             this.btnRegresar3.TabIndex = 1;
             this.btnRegresar3.Text = "Regresar";
             this.btnRegresar3.UseVisualStyleBackColor = true;
@@ -82,20 +76,19 @@
             // 
             // btnNuevaCompra
             // 
-            this.btnNuevaCompra.Location = new System.Drawing.Point(621, 400);
-            this.btnNuevaCompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevaCompra.Location = new System.Drawing.Point(466, 325);
             this.btnNuevaCompra.Name = "btnNuevaCompra";
-            this.btnNuevaCompra.Size = new System.Drawing.Size(193, 39);
+            this.btnNuevaCompra.Size = new System.Drawing.Size(145, 32);
             this.btnNuevaCompra.TabIndex = 2;
             this.btnNuevaCompra.Text = "Iniciar Nueva Compra";
             this.btnNuevaCompra.UseVisualStyleBackColor = true;
+            this.btnNuevaCompra.Click += new System.EventHandler(this.btnNuevaCompra_Click);
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.Location = new System.Drawing.Point(823, 400);
-            this.btnFinalizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFinalizar.Location = new System.Drawing.Point(617, 325);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(171, 39);
+            this.btnFinalizar.Size = new System.Drawing.Size(128, 32);
             this.btnFinalizar.TabIndex = 3;
             this.btnFinalizar.Text = "Finalizar";
             this.btnFinalizar.UseVisualStyleBackColor = true;
@@ -103,192 +96,134 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(56, 165);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(42, 134);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(97, 16);
+            this.lblName.Size = new System.Drawing.Size(77, 13);
             this.lblName.TabIndex = 4;
             this.lblName.Text = "Nombre/Name";
             // 
             // txtName
             // 
             this.txtName.Enabled = false;
-            this.txtName.Location = new System.Drawing.Point(60, 137);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Black;
+            this.txtName.Location = new System.Drawing.Point(45, 111);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(401, 22);
+            this.txtName.Size = new System.Drawing.Size(406, 20);
             this.txtName.TabIndex = 5;
             // 
             // txtFrom
             // 
             this.txtFrom.Enabled = false;
-            this.txtFrom.Location = new System.Drawing.Point(60, 196);
-            this.txtFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFrom.ForeColor = System.Drawing.Color.Black;
+            this.txtFrom.Location = new System.Drawing.Point(45, 159);
             this.txtFrom.Name = "txtFrom";
-            this.txtFrom.Size = new System.Drawing.Size(155, 22);
+            this.txtFrom.Size = new System.Drawing.Size(117, 20);
             this.txtFrom.TabIndex = 6;
             this.txtFrom.TabStop = false;
             // 
             // txtTo
             // 
             this.txtTo.Enabled = false;
-            this.txtTo.Location = new System.Drawing.Point(60, 254);
-            this.txtTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTo.ForeColor = System.Drawing.Color.Black;
+            this.txtTo.Location = new System.Drawing.Point(45, 206);
             this.txtTo.Name = "txtTo";
-            this.txtTo.Size = new System.Drawing.Size(155, 22);
+            this.txtTo.Size = new System.Drawing.Size(117, 20);
             this.txtTo.TabIndex = 7;
             // 
             // lblFrom
             // 
             this.lblFrom.AutoSize = true;
-            this.lblFrom.Location = new System.Drawing.Point(56, 224);
-            this.lblFrom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFrom.Location = new System.Drawing.Point(42, 182);
             this.lblFrom.Name = "lblFrom";
-            this.lblFrom.Size = new System.Drawing.Size(83, 16);
+            this.lblFrom.Size = new System.Drawing.Size(66, 13);
             this.lblFrom.TabIndex = 8;
             this.lblFrom.Text = "Desde/From";
             // 
             // lblTo
             // 
             this.lblTo.AutoSize = true;
-            this.lblTo.Location = new System.Drawing.Point(56, 282);
-            this.lblTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTo.Location = new System.Drawing.Point(42, 229);
             this.lblTo.Name = "lblTo";
-            this.lblTo.Size = new System.Drawing.Size(37, 16);
+            this.lblTo.Size = new System.Drawing.Size(32, 13);
             this.lblTo.TabIndex = 9;
             this.lblTo.Text = "A/To";
             // 
             // txtAerolinea
             // 
             this.txtAerolinea.Enabled = false;
-            this.txtAerolinea.Location = new System.Drawing.Point(224, 196);
-            this.txtAerolinea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAerolinea.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAerolinea.ForeColor = System.Drawing.Color.Black;
+            this.txtAerolinea.Location = new System.Drawing.Point(168, 159);
             this.txtAerolinea.Name = "txtAerolinea";
-            this.txtAerolinea.Size = new System.Drawing.Size(237, 22);
+            this.txtAerolinea.Size = new System.Drawing.Size(179, 20);
             this.txtAerolinea.TabIndex = 10;
             // 
             // lblAerolinea
             // 
             this.lblAerolinea.AutoSize = true;
-            this.lblAerolinea.Location = new System.Drawing.Point(220, 224);
-            this.lblAerolinea.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAerolinea.Location = new System.Drawing.Point(165, 182);
             this.lblAerolinea.Name = "lblAerolinea";
-            this.lblAerolinea.Size = new System.Drawing.Size(109, 16);
+            this.lblAerolinea.Size = new System.Drawing.Size(88, 13);
             this.lblAerolinea.TabIndex = 11;
             this.lblAerolinea.Text = "Aerolínea/Carrier";
             // 
             // txtDate
             // 
             this.txtDate.Enabled = false;
-            this.txtDate.Location = new System.Drawing.Point(224, 254);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.ForeColor = System.Drawing.Color.Black;
+            this.txtDate.Location = new System.Drawing.Point(168, 206);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(135, 22);
+            this.txtDate.Size = new System.Drawing.Size(141, 20);
             this.txtDate.TabIndex = 12;
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(220, 282);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDate.Location = new System.Drawing.Point(165, 229);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(78, 16);
+            this.lblDate.Size = new System.Drawing.Size(65, 13);
             this.lblDate.TabIndex = 13;
             this.lblDate.Text = "Fecha/Date";
             // 
-            // txtTime
-            // 
-            this.txtTime.Enabled = false;
-            this.txtTime.Location = new System.Drawing.Point(368, 254);
-            this.txtTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(93, 22);
-            this.txtTime.TabIndex = 14;
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(364, 282);
-            this.lblTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(72, 16);
-            this.lblTime.TabIndex = 15;
-            this.lblTime.Text = "Hora/Time";
-            // 
             // txtAsiento
             // 
+            this.txtAsiento.BackColor = System.Drawing.Color.White;
             this.txtAsiento.Enabled = false;
-            this.txtAsiento.Location = new System.Drawing.Point(471, 196);
-            this.txtAsiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAsiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAsiento.ForeColor = System.Drawing.Color.Black;
+            this.txtAsiento.Location = new System.Drawing.Point(353, 159);
             this.txtAsiento.Name = "txtAsiento";
-            this.txtAsiento.Size = new System.Drawing.Size(129, 22);
+            this.txtAsiento.Size = new System.Drawing.Size(98, 20);
             this.txtAsiento.TabIndex = 16;
             // 
             // lblSeat
             // 
             this.lblSeat.AutoSize = true;
-            this.lblSeat.Location = new System.Drawing.Point(467, 224);
-            this.lblSeat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSeat.Location = new System.Drawing.Point(350, 182);
             this.lblSeat.Name = "lblSeat";
-            this.lblSeat.Size = new System.Drawing.Size(84, 16);
+            this.lblSeat.Size = new System.Drawing.Size(69, 13);
             this.lblSeat.TabIndex = 17;
             this.lblSeat.Text = "Asiento/Seat";
-            // 
-            // txtVuelo
-            // 
-            this.txtVuelo.Enabled = false;
-            this.txtVuelo.Location = new System.Drawing.Point(471, 137);
-            this.txtVuelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtVuelo.Name = "txtVuelo";
-            this.txtVuelo.Size = new System.Drawing.Size(129, 22);
-            this.txtVuelo.TabIndex = 18;
-            // 
-            // txtTill
-            // 
-            this.txtTill.Enabled = false;
-            this.txtTill.Location = new System.Drawing.Point(471, 254);
-            this.txtTill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTill.Name = "txtTill";
-            this.txtTill.Size = new System.Drawing.Size(129, 22);
-            this.txtTill.TabIndex = 19;
-            // 
-            // lblVuelo
-            // 
-            this.lblVuelo.AutoSize = true;
-            this.lblVuelo.Location = new System.Drawing.Point(467, 165);
-            this.lblVuelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblVuelo.Name = "lblVuelo";
-            this.lblVuelo.Size = new System.Drawing.Size(78, 16);
-            this.lblVuelo.TabIndex = 20;
-            this.lblVuelo.Text = "Vuelo/Flight";
-            // 
-            // lblTill
-            // 
-            this.lblTill.AutoSize = true;
-            this.lblTill.Location = new System.Drawing.Point(467, 282);
-            this.lblTill.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTill.Name = "lblTill";
-            this.lblTill.Size = new System.Drawing.Size(65, 16);
-            this.lblTill.TabIndex = 21;
-            this.lblTill.Text = "Board Till";
             // 
             // rtbDatoTotal
             // 
             this.rtbDatoTotal.Enabled = false;
-            this.rtbDatoTotal.Location = new System.Drawing.Point(735, 137);
-            this.rtbDatoTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtbDatoTotal.Location = new System.Drawing.Point(551, 111);
             this.rtbDatoTotal.Name = "rtbDatoTotal";
-            this.rtbDatoTotal.Size = new System.Drawing.Size(272, 160);
+            this.rtbDatoTotal.Size = new System.Drawing.Size(205, 131);
             this.rtbDatoTotal.TabIndex = 22;
             this.rtbDatoTotal.Text = "";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(609, 137);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(457, 111);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 161);
+            this.pictureBox1.Size = new System.Drawing.Size(49, 131);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
@@ -296,27 +231,41 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(703, 137);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(527, 111);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(6, 136);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
             // 
+            // txtTime
+            // 
+            this.txtTime.Enabled = false;
+            this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTime.ForeColor = System.Drawing.Color.Black;
+            this.txtTime.Location = new System.Drawing.Point(315, 206);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(136, 20);
+            this.txtTime.TabIndex = 14;
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Location = new System.Drawing.Point(312, 229);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(58, 13);
+            this.lblTime.TabIndex = 15;
+            this.lblTime.Text = "Hora/Time";
+            // 
             // FACTURA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1041, 454);
+            this.ClientSize = new System.Drawing.Size(781, 369);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rtbDatoTotal);
-            this.Controls.Add(this.lblTill);
-            this.Controls.Add(this.lblVuelo);
-            this.Controls.Add(this.txtTill);
-            this.Controls.Add(this.txtVuelo);
             this.Controls.Add(this.lblSeat);
             this.Controls.Add(this.txtAsiento);
             this.Controls.Add(this.lblTime);
@@ -335,7 +284,6 @@
             this.Controls.Add(this.btnNuevaCompra);
             this.Controls.Add(this.btnRegresar3);
             this.Controls.Add(this.lblTitulo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FACTURA";
             this.Text = "FACTURA";
             this.Load += new System.EventHandler(this.FACTURA_Load);
@@ -362,16 +310,12 @@
         private System.Windows.Forms.Label lblAerolinea;
         private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.TextBox txtTime;
-        private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.TextBox txtAsiento;
         private System.Windows.Forms.Label lblSeat;
-        private System.Windows.Forms.TextBox txtVuelo;
-        private System.Windows.Forms.TextBox txtTill;
-        private System.Windows.Forms.Label lblVuelo;
-        private System.Windows.Forms.Label lblTill;
         private System.Windows.Forms.RichTextBox rtbDatoTotal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox txtTime;
+        private System.Windows.Forms.Label lblTime;
     }
 }
