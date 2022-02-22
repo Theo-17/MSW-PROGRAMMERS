@@ -66,9 +66,9 @@
             // 
             // btnRegresar3
             // 
-            this.btnRegresar3.Location = new System.Drawing.Point(12, 320);
+            this.btnRegresar3.Location = new System.Drawing.Point(12, 325);
             this.btnRegresar3.Name = "btnRegresar3";
-            this.btnRegresar3.Size = new System.Drawing.Size(128, 32);
+            this.btnRegresar3.Size = new System.Drawing.Size(126, 32);
             this.btnRegresar3.TabIndex = 1;
             this.btnRegresar3.Text = "Regresar";
             this.btnRegresar3.UseVisualStyleBackColor = true;
@@ -105,6 +105,8 @@
             // txtName
             // 
             this.txtName.Enabled = false;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.Location = new System.Drawing.Point(45, 111);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(406, 20);
@@ -113,6 +115,8 @@
             // txtFrom
             // 
             this.txtFrom.Enabled = false;
+            this.txtFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFrom.ForeColor = System.Drawing.Color.Black;
             this.txtFrom.Location = new System.Drawing.Point(45, 159);
             this.txtFrom.Name = "txtFrom";
             this.txtFrom.Size = new System.Drawing.Size(117, 20);
@@ -122,6 +126,8 @@
             // txtTo
             // 
             this.txtTo.Enabled = false;
+            this.txtTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTo.ForeColor = System.Drawing.Color.Black;
             this.txtTo.Location = new System.Drawing.Point(45, 206);
             this.txtTo.Name = "txtTo";
             this.txtTo.Size = new System.Drawing.Size(117, 20);
@@ -148,6 +154,8 @@
             // txtAerolinea
             // 
             this.txtAerolinea.Enabled = false;
+            this.txtAerolinea.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAerolinea.ForeColor = System.Drawing.Color.Black;
             this.txtAerolinea.Location = new System.Drawing.Point(168, 159);
             this.txtAerolinea.Name = "txtAerolinea";
             this.txtAerolinea.Size = new System.Drawing.Size(179, 20);
@@ -165,6 +173,8 @@
             // txtDate
             // 
             this.txtDate.Enabled = false;
+            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.ForeColor = System.Drawing.Color.Black;
             this.txtDate.Location = new System.Drawing.Point(168, 206);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(141, 20);
@@ -181,7 +191,10 @@
             // 
             // txtAsiento
             // 
+            this.txtAsiento.BackColor = System.Drawing.Color.White;
             this.txtAsiento.Enabled = false;
+            this.txtAsiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAsiento.ForeColor = System.Drawing.Color.Black;
             this.txtAsiento.Location = new System.Drawing.Point(353, 159);
             this.txtAsiento.Name = "txtAsiento";
             this.txtAsiento.Size = new System.Drawing.Size(98, 20);
@@ -228,6 +241,8 @@
             // txtTime
             // 
             this.txtTime.Enabled = false;
+            this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTime.ForeColor = System.Drawing.Color.Black;
             this.txtTime.Location = new System.Drawing.Point(315, 206);
             this.txtTime.Name = "txtTime";
             this.txtTime.Size = new System.Drawing.Size(136, 20);
