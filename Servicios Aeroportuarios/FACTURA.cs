@@ -79,7 +79,7 @@ namespace Servicios_Aeroportuarios
             {
                 DESTINOS.numAsientoBra++;
             }
-            if (DESTINOS.Info.destino.paisLLegada == "Arg")
+            if (DESTINOS.Info.destino.paisLLegada == "Argentina")
             {
                 DESTINOS.numAsientoArg++;
             }
