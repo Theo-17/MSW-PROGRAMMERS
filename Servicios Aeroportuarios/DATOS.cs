@@ -146,7 +146,7 @@ namespace Servicios_Aeroportuarios
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Por favor\nIngrese los datos correctamente", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor\nLLene todos los datos correctamente", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 btnSiguiente.Enabled=false;
                 btnConfirmar.Enabled = false;
                 txaDescripcion.Text = "";
@@ -177,6 +177,7 @@ namespace Servicios_Aeroportuarios
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            persona.sexo = "";
             lblConfirme.Hide();
             if(DESTINOS.numAsientoArg>50 && DESTINOS.numAsientoBra > 50 && DESTINOS.numAsientoChi > 50)
             {
