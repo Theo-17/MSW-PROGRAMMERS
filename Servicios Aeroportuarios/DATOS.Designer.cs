@@ -60,7 +60,7 @@
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblConfirme = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSiguiente
@@ -139,6 +139,7 @@
             // 
             this.txtPasaporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPasaporte.Location = new System.Drawing.Point(778, 122);
+            this.txtPasaporte.MaxLength = 10;
             this.txtPasaporte.Name = "txtPasaporte";
             this.txtPasaporte.Size = new System.Drawing.Size(153, 28);
             this.txtPasaporte.TabIndex = 8;
@@ -208,7 +209,6 @@
             this.lblFecha.Size = new System.Drawing.Size(272, 20);
             this.lblFecha.TabIndex = 15;
             this.lblFecha.Text = "Fecha de nacimiento \\ Date of birth";
-            this.lblFecha.Click += new System.EventHandler(this.label9_Click);
             // 
             // dateNacimiento
             // 
@@ -287,6 +287,7 @@
             // 
             // btnConfirmar
             // 
+            this.btnConfirmar.Enabled = false;
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar.Location = new System.Drawing.Point(281, 746);
             this.btnConfirmar.Name = "btnConfirmar";
@@ -350,6 +351,7 @@
             // 
             this.txtCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCelular.Location = new System.Drawing.Point(45, 512);
+            this.txtCelular.MaxLength = 10;
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(133, 28);
             this.txtCelular.TabIndex = 29;
@@ -376,24 +378,25 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // label1
+            // lblConfirme
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(741, 589);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 16);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "CONFIRME DATOS PARA CONTINUAR";
+            this.lblConfirme.AutoSize = true;
+            this.lblConfirme.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirme.ForeColor = System.Drawing.Color.Red;
+            this.lblConfirme.Location = new System.Drawing.Point(741, 589);
+            this.lblConfirme.Name = "lblConfirme";
+            this.lblConfirme.Size = new System.Drawing.Size(279, 16);
+            this.lblConfirme.TabIndex = 32;
+            this.lblConfirme.Text = "CONFIRME DATOS PARA CONTINUAR";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1075, 788);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblConfirme);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCelular);
@@ -425,7 +428,9 @@
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblDatos);
             this.Controls.Add(this.btnSiguiente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DATOS";
@@ -468,7 +473,7 @@
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblConfirme;
     }
 }
 

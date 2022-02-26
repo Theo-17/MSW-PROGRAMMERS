@@ -53,17 +53,6 @@ namespace Servicios_Aeroportuarios
 
         }
 
-
-        private void lblDatos_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             //txaDescripcion.AppendText("Apellidos: " + txtApellidos.Text);
@@ -77,8 +66,8 @@ namespace Servicios_Aeroportuarios
             public String apellido;
             public String lugarDeNacimiento;
             public String correo;
-            public String celular;
-            public String pasaporte;
+            public Int32 celular;
+            public Int32 pasaporte;
             public String sexo;
 
         }
@@ -95,6 +84,8 @@ namespace Servicios_Aeroportuarios
 
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
+            lblConfirme.Show();
+            btnConfirmar.Enabled = true;
             txaDescripcion.AppendText("Nombres: " + txtNombres.Text+"\n");
             txaDescripcion.AppendText("Apellidos: " + txtApellidos.Text+"\n");
             txaDescripcion.AppendText("Pasaporte: " + txtPasaporte.Text + "\n");
@@ -125,30 +116,70 @@ namespace Servicios_Aeroportuarios
 
         }
 
+        String aux = "aux";
+        int aux2;
+
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            persona.apellido =  txtApellidos.Text;
-            persona.nombre = txtNombres.Text;
-            persona.pasaporte = txtPasaporte.Text;  
-            persona.correo = txtEmail.Text; 
-            persona.celular = txtCelular.Text;
-            persona.lugarDeNacimiento = txtLugar.Text;
-            DateTime fecha = dateNacimiento.Value;
-            fN.nacimiento = fecha.ToShortDateString();
-            MessageBox.Show("Datos Guardados Corectamente", "CONFIRMAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            btnSiguiente.Enabled = true;
+            try
+            {
+                
+                if (txtApellidos.Text == "" || txtCelular.Text == "" || txtEmail.Text == "" || txtLugar.Text == "" || txtNombres.Text == "" || txtPasaporte.Text == "" || persona.sexo=="")
+                {
+                    aux2=Convert.ToInt16(aux);
+                }
+                else
+                {
+                    lblConfirme.Hide();
+                    persona.apellido = txtApellidos.Text;
+                    persona.nombre = txtNombres.Text;
+                    persona.correo = txtEmail.Text;
+                    persona.lugarDeNacimiento = txtLugar.Text;
+                    DateTime fecha = dateNacimiento.Value;
+                    fN.nacimiento = fecha.ToShortDateString();
+                    persona.pasaporte = Convert.ToInt32(txtPasaporte.Text);
+                    persona.celular = Convert.ToInt32(txtCelular.Text);
+                    MessageBox.Show("Datos Guardados Corectamente", "CONFIRMAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnSiguiente.Enabled = true;
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Por favor\nIngrese los datos correctamente", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnSiguiente.Enabled=false;
+                btnConfirmar.Enabled = false;
+                txaDescripcion.Text = "";
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txaDescripcion.Clear(); 
+            DialogResult dr = MessageBox.Show("Se eliminarán todos los datos ingresados.\n¿Está Seguro?", "BORRAR", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dr == DialogResult.Yes)
+            {
+                txtNombres.Text = "";
+                txtPasaporte.Text = "";
+                txtApellidos.Text = "";
+                txtCelular.Text = "";
+                txtEmail.Text = "";
+                txtLugar.Text = "";
+                rbtF.Checked = false;
+                rbtM.Checked = false;
+                dateNacimiento.ResetText();
+                btnConfirmar.Enabled = false;
+                btnSiguiente.Enabled = false;
+                txaDescripcion.Clear();
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            lblConfirme.Hide();
             if(DESTINOS.numAsientoArg>50 && DESTINOS.numAsientoBra > 50 && DESTINOS.numAsientoChi > 50)
             {
-                btnSiguiente.Enabled = false;
                 MessageBox.Show("NO HAY VUELOS DISPONIBLES", "INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
