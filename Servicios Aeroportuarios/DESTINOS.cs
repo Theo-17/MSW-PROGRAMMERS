@@ -39,7 +39,29 @@ namespace Servicios_Aeroportuarios
 
         private void DESTINOS_Load_1(object sender, EventArgs e)
         {
-            btnSiguiente.Hide();
+            btnSiguiente.Enabled = false;
+            if (Info.destino.paisLLegada=="Argentina")
+            {
+                rbtEaArgentina.Checked = true;
+                btnSiguiente.Enabled = true;
+            }
+            else
+            {
+                if (Info.destino.paisLLegada == "Brasil")
+                {
+                    rbtEaBrasil.Checked = true;
+                    btnSiguiente.Enabled = true;
+                }
+                else
+                {
+                    if (Info.destino.paisLLegada == "Chile")
+                    {
+                        rbtEaChile.Checked = true;
+                        btnSiguiente.Enabled = true;
+                    }
+                }
+            }
+            
             lblSinAsienArg.Hide();
             lblSinAsienChi.Hide();
             lblSinAsienBra.Hide();
@@ -62,7 +84,6 @@ namespace Servicios_Aeroportuarios
 
         private void rbtEaChile_CheckedChanged(object sender, EventArgs e)
         {
-            btnSiguiente.Show();
 
             if (rbtEaChile.Checked==true && numAsientoChi<=50)
             {
@@ -80,7 +101,6 @@ namespace Servicios_Aeroportuarios
 
         private void rbtEaBrasil_CheckedChanged(object sender, EventArgs e)
         {
-            btnSiguiente.Show();
 
             if (rbtEaBrasil.Checked == true && numAsientoBra <= 50)
             {
@@ -98,7 +118,6 @@ namespace Servicios_Aeroportuarios
 
         private void rbtEaArgentina_CheckedChanged(object sender, EventArgs e)
         {
-            btnSiguiente.Show();
 
             if (rbtEaArgentina.Checked == true && numAsientoArg <= 50)
             {

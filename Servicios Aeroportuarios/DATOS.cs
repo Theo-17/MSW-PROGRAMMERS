@@ -66,8 +66,8 @@ namespace Servicios_Aeroportuarios
             public String apellido;
             public String lugarDeNacimiento;
             public String correo;
-            public Int32 celular;
-            public Int32 pasaporte;
+            public UInt64 celular;
+            public UInt64 pasaporte;
             public String sexo;
 
         }
@@ -84,6 +84,18 @@ namespace Servicios_Aeroportuarios
 
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
+            if (rbtF.Checked == true)
+            {
+                persona.sexo = "Femenino";
+            }
+            else
+            {
+                if (rbtM.Checked == true)
+                {
+                    persona.sexo = "Masculino";
+                }
+            }
+            txaDescripcion.Text = "";
             lblConfirme.Show();
             btnConfirmar.Enabled = true;
             txaDescripcion.AppendText("Nombres: " + txtNombres.Text+"\n");
@@ -99,23 +111,6 @@ namespace Servicios_Aeroportuarios
 
         }
 
-        private void rbtM_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbtM.Checked == true)
-            {
-                persona.sexo = "Masculino";
-            }
-        }
-
-        private void rbtF_CheckedChanged(object sender, EventArgs e)
-        {
-            if(rbtF.Checked == true)
-            {
-                persona.sexo = "Femenino";
-            }
-
-        }
-
         String aux = "aux";
         int aux2;
 
@@ -124,9 +119,10 @@ namespace Servicios_Aeroportuarios
             try
             {
                 
-                if (txtApellidos.Text == "" || txtCelular.Text == "" || txtEmail.Text == "" || txtLugar.Text == "" || txtNombres.Text == "" || txtPasaporte.Text == "" || persona.sexo=="")
+                if (string.IsNullOrEmpty(txtApellidos.Text) || string.IsNullOrEmpty(txtCelular.Text) || string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtLugar.Text) || string.IsNullOrEmpty(txtNombres.Text) || string.IsNullOrEmpty(txtPasaporte.Text) || string.IsNullOrEmpty(persona.sexo) || dateNacimiento.Value.ToShortDateString()== DateTime.Now.ToShortDateString() || dateNacimiento.Value.Year>DateTime.Now.Year || txtPasaporte.TextLength <= 9 || txtCelular.TextLength <= 9)
                 {
                     aux2=Convert.ToInt16(aux);
+                    
                 }
                 else
                 {
@@ -137,8 +133,8 @@ namespace Servicios_Aeroportuarios
                     persona.lugarDeNacimiento = txtLugar.Text;
                     DateTime fecha = dateNacimiento.Value;
                     fN.nacimiento = fecha.ToShortDateString();
-                    persona.pasaporte = Convert.ToInt32(txtPasaporte.Text);
-                    persona.celular = Convert.ToInt32(txtCelular.Text);
+                    persona.pasaporte = Convert.ToUInt64(txtPasaporte.Text);
+                    persona.celular = Convert.ToUInt64(txtCelular.Text);
                     MessageBox.Show("Datos Guardados Corectamente", "CONFIRMAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     btnSiguiente.Enabled = true;
                 }
@@ -150,6 +146,7 @@ namespace Servicios_Aeroportuarios
                 btnSiguiente.Enabled=false;
                 btnConfirmar.Enabled = false;
                 txaDescripcion.Text = "";
+                lblConfirme.Hide();
             }
 
         }
@@ -175,9 +172,35 @@ namespace Servicios_Aeroportuarios
             
         }
 
+        static public int aux3 = 0;
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (aux3==0)
+            {
+                txtCelular.Text = "";
+                txtPasaporte.Text = "";
+                aux3 = 1;
+            }
+            else
+            {
+                txtPasaporte.Text = Convert.ToString(persona.pasaporte);
+                txtCelular.Text = Convert.ToString(persona.celular);
+                if (persona.sexo=="Masculino")
+                {
+                    rbtM.Checked = true;
+                }
+                else
+                {
+                    rbtF.Checked = true;
+                }
+            }
+            txtApellidos.Text = persona.apellido;
+            txtEmail.Text = persona.correo;
+            txtLugar.Text = persona.lugarDeNacimiento;
+            txtNombres.Text=persona.nombre;
+            dateNacimiento.Value=DateTime.Now;
             persona.sexo = "";
+
             lblConfirme.Hide();
             if(DESTINOS.numAsientoArg>50 && DESTINOS.numAsientoBra > 50 && DESTINOS.numAsientoChi > 50)
             {

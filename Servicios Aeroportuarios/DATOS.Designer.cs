@@ -270,7 +270,6 @@
             this.rbtM.TabStop = true;
             this.rbtM.Text = "M";
             this.rbtM.UseVisualStyleBackColor = true;
-            this.rbtM.CheckedChanged += new System.EventHandler(this.rbtM_CheckedChanged);
             // 
             // rbtF
             // 
@@ -283,7 +282,6 @@
             this.rbtF.TabStop = true;
             this.rbtF.Text = "F";
             this.rbtF.UseVisualStyleBackColor = true;
-            this.rbtF.CheckedChanged += new System.EventHandler(this.rbtF_CheckedChanged);
             // 
             // btnConfirmar
             // 
