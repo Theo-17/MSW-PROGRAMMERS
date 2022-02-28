@@ -70,7 +70,7 @@ namespace Servicios_Aeroportuarios
 
         private void btnNuevaCompra_Click(object sender, EventArgs e)
         {
-    
+            DESTINOS.Info.destino.paisLLegada = "";
             if (DESTINOS.Info.destino.paisLLegada == "Chile")
             {
                 DESTINOS.numAsientoChi++;
@@ -84,6 +84,13 @@ namespace Servicios_Aeroportuarios
                 DESTINOS.numAsientoArg++;
             }
 
+            Form1.persona.apellido = "";
+            Form1.persona.nombre = "";
+            Form1.aux3 = 0;
+            Form1.persona.correo = "";
+            Form1.persona.sexo = "";
+            Form1.persona.lugarDeNacimiento = "";
+            
             Form1 formaInicial = new Form1();
             this.Hide();
             formaInicial.Show();
