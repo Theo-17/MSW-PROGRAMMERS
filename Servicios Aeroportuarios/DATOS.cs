@@ -189,6 +189,7 @@ namespace Servicios_Aeroportuarios
                     rbtF.Checked = true;
                 }
             }
+            
             txtApellidos.Text = persona.apellido;
             txtEmail.Text = persona.correo;
             txtLugar.Text = persona.lugarDeNacimiento;
