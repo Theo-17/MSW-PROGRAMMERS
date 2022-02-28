@@ -342,8 +342,11 @@
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.lblTitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "DESTINOS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DESTINO Y AEROLÍNEA";
             this.Load += new System.EventHandler(this.DESTINOS_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pbRyanair)).EndInit();
