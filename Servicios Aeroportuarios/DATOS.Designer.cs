@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.lblDatos = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
@@ -35,7 +36,7 @@
             this.lblPasaporte = new System.Windows.Forms.Label();
             this.lblP = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPasaporte = new System.Windows.Forms.TextBox();
             this.lblApellidos = new System.Windows.Forms.Label();
             this.lblNombres = new System.Windows.Forms.Label();
             this.txtApellidos = new System.Windows.Forms.TextBox();
@@ -57,12 +58,16 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblCelular = new System.Windows.Forms.Label();
             this.txtCelular = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.lblConfirme = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSiguiente
             // 
+            this.btnSiguiente.Enabled = false;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(835, 655);
+            this.btnSiguiente.Location = new System.Drawing.Point(796, 608);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(169, 43);
             this.btnSiguiente.TabIndex = 0;
@@ -130,13 +135,14 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "ECU      A65452098";
             // 
-            // textBox1
+            // txtPasaporte
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(778, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 28);
-            this.textBox1.TabIndex = 8;
+            this.txtPasaporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasaporte.Location = new System.Drawing.Point(778, 122);
+            this.txtPasaporte.MaxLength = 10;
+            this.txtPasaporte.Name = "txtPasaporte";
+            this.txtPasaporte.Size = new System.Drawing.Size(153, 28);
+            this.txtPasaporte.TabIndex = 8;
             // 
             // lblApellidos
             // 
@@ -203,7 +209,6 @@
             this.lblFecha.Size = new System.Drawing.Size(272, 20);
             this.lblFecha.TabIndex = 15;
             this.lblFecha.Text = "Fecha de nacimiento \\ Date of birth";
-            this.lblFecha.Click += new System.EventHandler(this.label9_Click);
             // 
             // dateNacimiento
             // 
@@ -214,6 +219,7 @@
             this.dateNacimiento.Name = "dateNacimiento";
             this.dateNacimiento.Size = new System.Drawing.Size(399, 24);
             this.dateNacimiento.TabIndex = 16;
+            this.dateNacimiento.Value = new System.DateTime(2022, 2, 22, 0, 0, 0, 0);
             // 
             // lblLugar
             // 
@@ -279,16 +285,21 @@
             // 
             // btnConfirmar
             // 
+            this.btnConfirmar.Enabled = false;
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.Location = new System.Drawing.Point(309, 746);
+            this.btnConfirmar.Location = new System.Drawing.Point(281, 746);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(175, 31);
+            this.btnConfirmar.Size = new System.Drawing.Size(244, 31);
             this.btnConfirmar.TabIndex = 23;
             this.btnConfirmar.Text = "CONFIRMAR DATOS";
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // txaDescripcion
             // 
+            this.txaDescripcion.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txaDescripcion.Enabled = false;
+            this.txaDescripcion.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.txaDescripcion.Location = new System.Drawing.Point(156, 596);
             this.txaDescripcion.Name = "txaDescripcion";
             this.txaDescripcion.Size = new System.Drawing.Size(484, 144);
@@ -298,12 +309,13 @@
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(281, 560);
+            this.btnGuardar.Location = new System.Drawing.Point(415, 560);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(225, 30);
             this.btnGuardar.TabIndex = 25;
-            this.btnGuardar.Text = "GUARDAR DATOS";
+            this.btnGuardar.Text = "MOSTRAR DATOS";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // lblEmail
             // 
@@ -337,16 +349,54 @@
             // 
             this.txtCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCelular.Location = new System.Drawing.Point(45, 512);
+            this.txtCelular.MaxLength = 10;
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(133, 28);
             this.txtCelular.TabIndex = 29;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(156, 560);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(225, 30);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "BORRAR DATOS";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Location = new System.Drawing.Point(775, 683);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(211, 43);
+            this.btnCerrar.TabIndex = 31;
+            this.btnCerrar.Text = "Cerrar Programa";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // lblConfirme
+            // 
+            this.lblConfirme.AutoSize = true;
+            this.lblConfirme.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirme.ForeColor = System.Drawing.Color.Red;
+            this.lblConfirme.Location = new System.Drawing.Point(741, 589);
+            this.lblConfirme.Name = "lblConfirme";
+            this.lblConfirme.Size = new System.Drawing.Size(279, 16);
+            this.lblConfirme.TabIndex = 32;
+            this.lblConfirme.Text = "CONFIRME DATOS PARA CONTINUAR";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1075, 788);
+            this.Controls.Add(this.lblConfirme);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCelular);
             this.Controls.Add(this.lblCelular);
             this.Controls.Add(this.txtEmail);
@@ -368,7 +418,7 @@
             this.Controls.Add(this.txtApellidos);
             this.Controls.Add(this.lblNombres);
             this.Controls.Add(this.lblApellidos);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPasaporte);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblP);
             this.Controls.Add(this.lblPasaporte);
@@ -376,8 +426,13 @@
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblDatos);
             this.Controls.Add(this.btnSiguiente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DATOS";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -392,7 +447,7 @@
         private System.Windows.Forms.Label lblPasaporte;
         private System.Windows.Forms.Label lblP;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPasaporte;
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.Label lblNombres;
         private System.Windows.Forms.TextBox txtApellidos;
@@ -414,6 +469,9 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblCelular;
         private System.Windows.Forms.TextBox txtCelular;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Label lblConfirme;
     }
 }
 
