@@ -49,10 +49,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>35E34273BE2A3348ED7DB3D03701C9054805D816</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>030448F05AA9D5F9DBF41AB5FE158C464FA623EC</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Servicios Aeroportuarios_2_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>Servicios Aeroportuarios_3_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -132,6 +132,7 @@
     </Compile>
     <None Include="Servicios Aeroportuarios_1_TemporaryKey.pfx" />
     <None Include="Servicios Aeroportuarios_2_TemporaryKey.pfx" />
+    <None Include="Servicios Aeroportuarios_3_TemporaryKey.pfx" />
     <None Include="Servicios Aeroportuarios_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
