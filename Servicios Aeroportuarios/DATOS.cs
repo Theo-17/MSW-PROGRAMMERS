@@ -25,17 +25,12 @@ namespace Servicios_Aeroportuarios
         static public Aerolinea Info;
 
 
-
-
         public struct Persona
         {
             public String nombre;
         }
 
-
         static public Persona persona;
-
-
 
         */
 
