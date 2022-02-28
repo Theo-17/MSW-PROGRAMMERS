@@ -70,7 +70,7 @@ namespace Servicios_Aeroportuarios
 
         private void btnNuevaCompra_Click(object sender, EventArgs e)
         {
-    
+            DESTINOS.Info.destino.paisLLegada = "";
             if (DESTINOS.Info.destino.paisLLegada == "Chile")
             {
                 DESTINOS.numAsientoChi++;

@@ -59,6 +59,16 @@ namespace Servicios_Aeroportuarios
                         rbtEaChile.Checked = true;
                         btnSiguiente.Enabled = true;
                     }
+                    else
+                    {
+                        if (Info.destino.paisLLegada == "")
+                        {
+                            rbtEaArgentina.Checked= false;
+                            rbtEaBrasil.Checked= false;
+                            rbtEaChile.Checked= false;
+                            btnSiguiente.Enabled = false;   
+                        }
+                    }
                 }
             }
             
