@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Servicios_Aeroportuarios
 {
-    public partial class Form1 : Form
+    public partial class fDATOS : Form
     {
 
         /*
@@ -35,14 +35,14 @@ namespace Servicios_Aeroportuarios
         */
 
 
-        public Form1()
+        public fDATOS()
         {
             InitializeComponent();
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            DESTINOS destino = new DESTINOS();
+            fDESTINOS destino = new fDESTINOS();
             this.Hide();
             destino.ShowDialog();
 
@@ -63,7 +63,7 @@ namespace Servicios_Aeroportuarios
             public String correo;
             public UInt64 celular;
             public UInt64 pasaporte;
-            public String sexo;
+            public String sexo; 
 
         }
         public struct Fecha
@@ -79,30 +79,30 @@ namespace Servicios_Aeroportuarios
 
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
-            if (rbtF.Checked == true)
+            if (rbtFemenino.Checked == true)
             {
                 persona.sexo = "Femenino";
             }
             else
             {
-                if (rbtM.Checked == true)
+                if (rbtMasculino.Checked == true)
                 {
                     persona.sexo = "Masculino";
                 }
             }
-            txaDescripcion.Text = "";
+            rtbDescripcion.Text = "";
             lblConfirme.Show();
             btnConfirmar.Enabled = true;
-            txaDescripcion.AppendText("Nombres: " + txtNombres.Text+"\n");
-            txaDescripcion.AppendText("Apellidos: " + txtApellidos.Text+"\n");
-            txaDescripcion.AppendText("Pasaporte: " + txtPasaporte.Text + "\n");
-            txaDescripcion.AppendText("Lugar de nacimiento: " + txtLugar.Text + ",ECU"+"\n");
-            txaDescripcion.AppendText("cell: " + txtCelular.Text + "\n");
-            txaDescripcion.AppendText("Email: " + txtEmail.Text + "\n");
-            txaDescripcion.AppendText("Sexo: "+persona.sexo+"\n");
-            DateTime fecha = dateNacimiento.Value;
+            rtbDescripcion.AppendText("Nombres: " + txtNombres.Text+"\n");
+            rtbDescripcion.AppendText("Apellidos: " + txtApellidos.Text+"\n");
+            rtbDescripcion.AppendText("Pasaporte: " + txtPasaporte.Text + "\n");
+            rtbDescripcion.AppendText("Lugar de nacimiento: " + txtLugar.Text + ",ECU"+"\n");
+            rtbDescripcion.AppendText("cell: " + txtCelular.Text + "\n");
+            rtbDescripcion.AppendText("Email: " + txtEmail.Text + "\n");
+            rtbDescripcion.AppendText("Sexo: "+persona.sexo+"\n");
+            DateTime fecha = dtpNacimiento.Value;
             fN.nacimiento = fecha.ToShortDateString();
-            txaDescripcion.AppendText("Fecha de nacimiento: " + fN.nacimiento + "\n");
+            rtbDescripcion.AppendText("Fecha de nacimiento: " + fN.nacimiento + "\n");
 
         }
 
@@ -114,7 +114,7 @@ namespace Servicios_Aeroportuarios
             try
             {
                 
-                if (string.IsNullOrEmpty(txtApellidos.Text) || string.IsNullOrEmpty(txtCelular.Text) || string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtLugar.Text) || string.IsNullOrEmpty(txtNombres.Text) || string.IsNullOrEmpty(txtPasaporte.Text) || string.IsNullOrEmpty(persona.sexo) || dateNacimiento.Value.ToShortDateString()== DateTime.Now.ToShortDateString() || dateNacimiento.Value.Year>DateTime.Now.Year || txtPasaporte.TextLength <= 9 || txtCelular.TextLength <= 9)
+                if (string.IsNullOrEmpty(txtApellidos.Text) || string.IsNullOrEmpty(txtCelular.Text) || string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtLugar.Text) || string.IsNullOrEmpty(txtNombres.Text) || string.IsNullOrEmpty(txtPasaporte.Text) || string.IsNullOrEmpty(persona.sexo) || dtpNacimiento.Value.ToShortDateString()== DateTime.Now.ToShortDateString() || dtpNacimiento.Value.Year>DateTime.Now.Year || txtPasaporte.TextLength <= 9 || txtCelular.TextLength <= 9)
                 {
                     aux2=Convert.ToInt16(aux);
                     
@@ -126,7 +126,7 @@ namespace Servicios_Aeroportuarios
                     persona.nombre = txtNombres.Text;
                     persona.correo = txtEmail.Text;
                     persona.lugarDeNacimiento = txtLugar.Text;
-                    DateTime fecha = dateNacimiento.Value;
+                    DateTime fecha = dtpNacimiento.Value;
                     fN.nacimiento = fecha.ToShortDateString();
                     persona.pasaporte = Convert.ToUInt64(txtPasaporte.Text);
                     persona.celular = Convert.ToUInt64(txtCelular.Text);
@@ -140,7 +140,7 @@ namespace Servicios_Aeroportuarios
                 MessageBox.Show("Por favor\nLLene todos los datos correctamente", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 btnSiguiente.Enabled=false;
                 btnConfirmar.Enabled = false;
-                txaDescripcion.Text = "";
+                rtbDescripcion.Text = "";
                 lblConfirme.Hide();
             }
 
@@ -157,12 +157,12 @@ namespace Servicios_Aeroportuarios
                 txtCelular.Text = "";
                 txtEmail.Text = "";
                 txtLugar.Text = "";
-                rbtF.Checked = false;
-                rbtM.Checked = false;
-                dateNacimiento.ResetText();
+                rbtFemenino.Checked = false;
+                rbtMasculino.Checked = false;
+                dtpNacimiento.ResetText();
                 btnConfirmar.Enabled = false;
                 btnSiguiente.Enabled = false;
-                txaDescripcion.Clear();
+                rtbDescripcion.Clear();
             }
             
         }
@@ -182,11 +182,11 @@ namespace Servicios_Aeroportuarios
                 txtCelular.Text = Convert.ToString(persona.celular);
                 if (persona.sexo=="Masculino")
                 {
-                    rbtM.Checked = true;
+                    rbtMasculino.Checked = true;
                 }
                 else
                 {
-                    rbtF.Checked = true;
+                    rbtFemenino.Checked = true;
                 }
             }
             
@@ -194,11 +194,11 @@ namespace Servicios_Aeroportuarios
             txtEmail.Text = persona.correo;
             txtLugar.Text = persona.lugarDeNacimiento;
             txtNombres.Text=persona.nombre;
-            dateNacimiento.Value=DateTime.Now;
+            dtpNacimiento.Value=DateTime.Now;
             persona.sexo = "";
 
             lblConfirme.Hide();
-            if(DESTINOS.numAsientoArg>50 && DESTINOS.numAsientoBra > 50 && DESTINOS.numAsientoChi > 50)
+            if(fDESTINOS.numAsientoArg>50 && fDESTINOS.numAsientoBra > 50 && fDESTINOS.numAsientoChi > 50)
             {
                 MessageBox.Show("NO HAY VUELOS DISPONIBLES", "INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -215,5 +215,6 @@ namespace Servicios_Aeroportuarios
             }    
 
         }
+
     }
 }

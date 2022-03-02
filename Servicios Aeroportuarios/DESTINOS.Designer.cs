@@ -1,6 +1,6 @@
 ﻿namespace Servicios_Aeroportuarios
 {
-    partial class DESTINOS
+    partial class fDESTINOS
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DESTINOS));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fDESTINOS));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
@@ -312,7 +312,7 @@
             this.lblSinAsienArg.TabIndex = 24;
             this.lblSinAsienArg.Text = "(NO HAY ASIENTOS DISPONIBLES)";
             // 
-            // DESTINOS
+            // fDESTINOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -345,7 +345,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "DESTINOS";
+            this.Name = "fDESTINOS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DESTINO Y AEROLÍNEA";
             this.Load += new System.EventHandler(this.DESTINOS_Load_1);

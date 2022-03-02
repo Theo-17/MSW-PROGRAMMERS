@@ -1,6 +1,6 @@
 ﻿namespace Servicios_Aeroportuarios
 {
-    partial class FACTURA
+    partial class fFACTURA
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FACTURA));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fFACTURA));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnRegresar3 = new System.Windows.Forms.Button();
             this.btnNuevaCompra = new System.Windows.Forms.Button();
@@ -46,13 +46,13 @@
             this.txtAsiento = new System.Windows.Forms.TextBox();
             this.lblSeat = new System.Windows.Forms.Label();
             this.rtbDatoTotal = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbCodigoDeBarra = new System.Windows.Forms.PictureBox();
+            this.pbCorte = new System.Windows.Forms.PictureBox();
             this.txtTime = new System.Windows.Forms.TextBox();
             this.lblTime = new System.Windows.Forms.Label();
-            this.fechaVuelo = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.dtpVuelo = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCodigoDeBarra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCorte)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -238,27 +238,27 @@
             this.rtbDatoTotal.TabIndex = 22;
             this.rtbDatoTotal.Text = "";
             // 
-            // pictureBox1
+            // pbCodigoDeBarra
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(609, 137);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 161);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
+            this.pbCodigoDeBarra.Image = ((System.Drawing.Image)(resources.GetObject("pbCodigoDeBarra.Image")));
+            this.pbCodigoDeBarra.Location = new System.Drawing.Point(609, 137);
+            this.pbCodigoDeBarra.Margin = new System.Windows.Forms.Padding(4);
+            this.pbCodigoDeBarra.Name = "pbCodigoDeBarra";
+            this.pbCodigoDeBarra.Size = new System.Drawing.Size(65, 161);
+            this.pbCodigoDeBarra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCodigoDeBarra.TabIndex = 23;
+            this.pbCodigoDeBarra.TabStop = false;
             // 
-            // pictureBox2
+            // pbCorte
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(703, 137);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(6, 136);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 24;
-            this.pictureBox2.TabStop = false;
+            this.pbCorte.Image = ((System.Drawing.Image)(resources.GetObject("pbCorte.Image")));
+            this.pbCorte.Location = new System.Drawing.Point(703, 137);
+            this.pbCorte.Margin = new System.Windows.Forms.Padding(4);
+            this.pbCorte.Name = "pbCorte";
+            this.pbCorte.Size = new System.Drawing.Size(6, 136);
+            this.pbCorte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbCorte.TabIndex = 24;
+            this.pbCorte.TabStop = false;
             // 
             // txtTime
             // 
@@ -281,24 +281,24 @@
             this.lblTime.TabIndex = 15;
             this.lblTime.Text = "Hora/Time";
             // 
-            // fechaVuelo
+            // dtpVuelo
             // 
-            this.fechaVuelo.Location = new System.Drawing.Point(60, 82);
-            this.fechaVuelo.Margin = new System.Windows.Forms.Padding(4);
-            this.fechaVuelo.Name = "fechaVuelo";
-            this.fechaVuelo.Size = new System.Drawing.Size(265, 22);
-            this.fechaVuelo.TabIndex = 25;
-            this.fechaVuelo.Visible = false;
+            this.dtpVuelo.Location = new System.Drawing.Point(60, 82);
+            this.dtpVuelo.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpVuelo.Name = "dtpVuelo";
+            this.dtpVuelo.Size = new System.Drawing.Size(265, 22);
+            this.dtpVuelo.TabIndex = 25;
+            this.dtpVuelo.Visible = false;
             // 
-            // FACTURA
+            // fFACTURA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1041, 454);
-            this.Controls.Add(this.fechaVuelo);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dtpVuelo);
+            this.Controls.Add(this.pbCorte);
+            this.Controls.Add(this.pbCodigoDeBarra);
             this.Controls.Add(this.rtbDatoTotal);
             this.Controls.Add(this.lblSeat);
             this.Controls.Add(this.txtAsiento);
@@ -322,12 +322,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "FACTURA";
+            this.Name = "fFACTURA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FACTURA";
             this.Load += new System.EventHandler(this.FACTURA_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCodigoDeBarra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCorte)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,10 +352,10 @@
         private System.Windows.Forms.TextBox txtAsiento;
         private System.Windows.Forms.Label lblSeat;
         private System.Windows.Forms.RichTextBox rtbDatoTotal;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbCodigoDeBarra;
+        private System.Windows.Forms.PictureBox pbCorte;
         private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.Label lblTime;
-        private System.Windows.Forms.DateTimePicker fechaVuelo;
+        private System.Windows.Forms.DateTimePicker dtpVuelo;
     }
 }

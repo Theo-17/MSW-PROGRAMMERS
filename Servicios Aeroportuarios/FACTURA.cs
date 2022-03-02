@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Servicios_Aeroportuarios
 {
-    public partial class FACTURA : Form
+    public partial class fFACTURA : Form
     {
 
-        public FACTURA()
+        public fFACTURA()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DESTINOS destinos = new DESTINOS();
+            fDESTINOS destinos = new fDESTINOS();
             this.Hide();
             destinos.Show();
         }
@@ -37,33 +37,33 @@ namespace Servicios_Aeroportuarios
             */
 
 
-            txtAsiento.AppendText(Convert.ToString(DESTINOS.Info.asiento));
-            txtAerolinea.AppendText(DESTINOS.Info.aerolinea);
+            txtAsiento.AppendText(Convert.ToString(fDESTINOS.Info.asiento));
+            txtAerolinea.AppendText(fDESTINOS.Info.aerolinea);
             
             
-            if (DESTINOS.Info.destino.paisLLegada == "Chile")
+            if (fDESTINOS.Info.destino.paisLLegada == "Chile")
             {
                 txtTime.Text = "7:00 am";
             }
-            if (DESTINOS.Info.destino.paisLLegada == "Brasil")
+            if (fDESTINOS.Info.destino.paisLLegada == "Brasil")
             {
                 txtTime.Text = "11:00 am";
             }
-            if (DESTINOS.Info.destino.paisLLegada == "Argentina")
+            if (fDESTINOS.Info.destino.paisLLegada == "Argentina")
             {
                 txtTime.Text = "15:00 pm";
             }
 
-            txtName.AppendText(Form1.persona.nombre+" "+Form1.persona.apellido);
-            txtFrom.AppendText(DESTINOS.Info.destino.paisSalida);
-            txtTo.AppendText(DESTINOS.Info.destino.paisLLegada);
+            txtName.AppendText(fDATOS.persona.nombre+" "+fDATOS.persona.apellido);
+            txtFrom.AppendText(fDESTINOS.Info.destino.paisSalida);
+            txtTo.AppendText(fDESTINOS.Info.destino.paisLLegada);
 
-            DateTime fecha = fechaVuelo.Value;
-            fechaVuelo.Value = DateTime.Today.AddDays(10);
-            txtDate.AppendText(Convert.ToString(fechaVuelo.Value.ToShortDateString()));
+            DateTime fecha = dtpVuelo.Value;
+            dtpVuelo.Value = DateTime.Today.AddDays(10);
+            txtDate.AppendText(Convert.ToString(dtpVuelo.Value.ToShortDateString()));
 
-            rtbDatoTotal.AppendText(Form1.persona.apellido+'/'+Form1.persona.nombre+"\n\nAsiento: "+ 
-                Convert.ToString(DESTINOS.Info.asiento)+'\n'+'\n'+ DESTINOS.Info.destino.paisSalida+'/'+ DESTINOS.Info.destino.paisLLegada +
+            rtbDatoTotal.AppendText(fDATOS.persona.apellido+'/'+fDATOS.persona.nombre+"\n\nAsiento: "+ 
+                Convert.ToString(fDESTINOS.Info.asiento)+'\n'+'\n'+ fDESTINOS.Info.destino.paisSalida+'/'+ fDESTINOS.Info.destino.paisLLegada +
                 "\n\nHora Salida: "+ txtTime.Text);
      
         }
@@ -71,28 +71,28 @@ namespace Servicios_Aeroportuarios
         private void btnNuevaCompra_Click(object sender, EventArgs e)
         {
             
-            if (DESTINOS.Info.destino.paisLLegada == "Chile")
+            if (fDESTINOS.Info.destino.paisLLegada == "Chile")
             {
-                DESTINOS.numAsientoChi++;
+                fDESTINOS.numAsientoChi++;
             }
-            if (DESTINOS.Info.destino.paisLLegada == "Brasil")
+            if (fDESTINOS.Info.destino.paisLLegada == "Brasil")
             {
-                DESTINOS.numAsientoBra++;
+                fDESTINOS.numAsientoBra++;
             }
-            if (DESTINOS.Info.destino.paisLLegada == "Argentina")
+            if (fDESTINOS.Info.destino.paisLLegada == "Argentina")
             {
-                DESTINOS.numAsientoArg++;
+                fDESTINOS.numAsientoArg++;
             }
-            DESTINOS.Info.destino.paisLLegada = "";
+            fDESTINOS.Info.destino.paisLLegada = "";
 
-            Form1.persona.apellido = "";
-            Form1.persona.nombre = "";
-            Form1.aux3 = 0;
-            Form1.persona.correo = "";
-            Form1.persona.sexo = "";
-            Form1.persona.lugarDeNacimiento = "";
+            fDATOS.persona.apellido = "";
+            fDATOS.persona.nombre = "";
+            fDATOS.aux3 = 0;
+            fDATOS.persona.correo = "";
+            fDATOS.persona.sexo = "";
+            fDATOS.persona.lugarDeNacimiento = "";
             
-            Form1 formaInicial = new Form1();
+            fDATOS formaInicial = new fDATOS();
             this.Hide();
             formaInicial.Show();
 

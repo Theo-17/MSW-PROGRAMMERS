@@ -1,6 +1,6 @@
 ﻿namespace Servicios_Aeroportuarios
 {
-    partial class Form1
+    partial class fDATOS
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fDATOS));
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.lblDatos = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
             this.lblCódigo = new System.Windows.Forms.Label();
             this.lblPasaporte = new System.Windows.Forms.Label();
             this.lblP = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblCodigoEcu = new System.Windows.Forms.Label();
             this.txtPasaporte = new System.Windows.Forms.TextBox();
             this.lblApellidos = new System.Windows.Forms.Label();
             this.lblNombres = new System.Windows.Forms.Label();
@@ -44,21 +44,21 @@
             this.lblNacionalidad = new System.Windows.Forms.Label();
             this.lblEcuatoriano = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.dateNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
             this.lblLugar = new System.Windows.Forms.Label();
             this.txtLugar = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblECU = new System.Windows.Forms.Label();
             this.lblSexo = new System.Windows.Forms.Label();
-            this.rbtM = new System.Windows.Forms.RadioButton();
-            this.rbtF = new System.Windows.Forms.RadioButton();
+            this.rbtMasculino = new System.Windows.Forms.RadioButton();
+            this.rbtFemenino = new System.Windows.Forms.RadioButton();
             this.btnConfirmar = new System.Windows.Forms.Button();
-            this.txaDescripcion = new System.Windows.Forms.RichTextBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.rtbDescripcion = new System.Windows.Forms.RichTextBox();
+            this.btnMostrar = new System.Windows.Forms.Button();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblCelular = new System.Windows.Forms.Label();
             this.txtCelular = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.lblConfirme = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -125,15 +125,15 @@
             this.lblP.TabIndex = 6;
             this.lblP.Text = "P";
             // 
-            // label2
+            // lblCodigoEcu
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(345, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(188, 22);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "ECU      A65452098";
+            this.lblCodigoEcu.AutoSize = true;
+            this.lblCodigoEcu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoEcu.Location = new System.Drawing.Point(345, 128);
+            this.lblCodigoEcu.Name = "lblCodigoEcu";
+            this.lblCodigoEcu.Size = new System.Drawing.Size(188, 22);
+            this.lblCodigoEcu.TabIndex = 7;
+            this.lblCodigoEcu.Text = "ECU      A65452098";
             // 
             // txtPasaporte
             // 
@@ -210,16 +210,16 @@
             this.lblFecha.TabIndex = 15;
             this.lblFecha.Text = "Fecha de nacimiento \\ Date of birth";
             // 
-            // dateNacimiento
+            // dtpNacimiento
             // 
-            this.dateNacimiento.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-            this.dateNacimiento.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dateNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateNacimiento.Location = new System.Drawing.Point(546, 196);
-            this.dateNacimiento.Name = "dateNacimiento";
-            this.dateNacimiento.Size = new System.Drawing.Size(399, 24);
-            this.dateNacimiento.TabIndex = 16;
-            this.dateNacimiento.Value = new System.DateTime(2022, 2, 22, 0, 0, 0, 0);
+            this.dtpNacimiento.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.dtpNacimiento.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dtpNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNacimiento.Location = new System.Drawing.Point(546, 196);
+            this.dtpNacimiento.Name = "dtpNacimiento";
+            this.dtpNacimiento.Size = new System.Drawing.Size(399, 24);
+            this.dtpNacimiento.TabIndex = 16;
+            this.dtpNacimiento.Value = new System.DateTime(2022, 2, 22, 0, 0, 0, 0);
             // 
             // lblLugar
             // 
@@ -239,15 +239,15 @@
             this.txtLugar.Size = new System.Drawing.Size(133, 28);
             this.txtLugar.TabIndex = 18;
             // 
-            // label11
+            // lblECU
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(184, 374);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 22);
-            this.label11.TabIndex = 19;
-            this.label11.Text = ",   ECU";
+            this.lblECU.AutoSize = true;
+            this.lblECU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblECU.Location = new System.Drawing.Point(184, 374);
+            this.lblECU.Name = "lblECU";
+            this.lblECU.Size = new System.Drawing.Size(75, 22);
+            this.lblECU.TabIndex = 19;
+            this.lblECU.Text = ",   ECU";
             // 
             // lblSexo
             // 
@@ -259,29 +259,29 @@
             this.lblSexo.TabIndex = 20;
             this.lblSexo.Text = "Sexo \\ Sex";
             // 
-            // rbtM
+            // rbtMasculino
             // 
-            this.rbtM.AutoSize = true;
-            this.rbtM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtM.Location = new System.Drawing.Point(744, 378);
-            this.rbtM.Name = "rbtM";
-            this.rbtM.Size = new System.Drawing.Size(45, 26);
-            this.rbtM.TabIndex = 21;
-            this.rbtM.TabStop = true;
-            this.rbtM.Text = "M";
-            this.rbtM.UseVisualStyleBackColor = true;
+            this.rbtMasculino.AutoSize = true;
+            this.rbtMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtMasculino.Location = new System.Drawing.Point(744, 378);
+            this.rbtMasculino.Name = "rbtMasculino";
+            this.rbtMasculino.Size = new System.Drawing.Size(45, 26);
+            this.rbtMasculino.TabIndex = 21;
+            this.rbtMasculino.TabStop = true;
+            this.rbtMasculino.Text = "M";
+            this.rbtMasculino.UseVisualStyleBackColor = true;
             // 
-            // rbtF
+            // rbtFemenino
             // 
-            this.rbtF.AutoSize = true;
-            this.rbtF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtF.Location = new System.Drawing.Point(744, 405);
-            this.rbtF.Name = "rbtF";
-            this.rbtF.Size = new System.Drawing.Size(42, 26);
-            this.rbtF.TabIndex = 22;
-            this.rbtF.TabStop = true;
-            this.rbtF.Text = "F";
-            this.rbtF.UseVisualStyleBackColor = true;
+            this.rbtFemenino.AutoSize = true;
+            this.rbtFemenino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtFemenino.Location = new System.Drawing.Point(744, 405);
+            this.rbtFemenino.Name = "rbtFemenino";
+            this.rbtFemenino.Size = new System.Drawing.Size(42, 26);
+            this.rbtFemenino.TabIndex = 22;
+            this.rbtFemenino.TabStop = true;
+            this.rbtFemenino.Text = "F";
+            this.rbtFemenino.UseVisualStyleBackColor = true;
             // 
             // btnConfirmar
             // 
@@ -295,27 +295,27 @@
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
-            // txaDescripcion
+            // rtbDescripcion
             // 
-            this.txaDescripcion.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txaDescripcion.Enabled = false;
-            this.txaDescripcion.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txaDescripcion.Location = new System.Drawing.Point(156, 596);
-            this.txaDescripcion.Name = "txaDescripcion";
-            this.txaDescripcion.Size = new System.Drawing.Size(484, 144);
-            this.txaDescripcion.TabIndex = 24;
-            this.txaDescripcion.Text = "";
+            this.rtbDescripcion.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rtbDescripcion.Enabled = false;
+            this.rtbDescripcion.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.rtbDescripcion.Location = new System.Drawing.Point(156, 596);
+            this.rtbDescripcion.Name = "rtbDescripcion";
+            this.rtbDescripcion.Size = new System.Drawing.Size(484, 144);
+            this.rtbDescripcion.TabIndex = 24;
+            this.rtbDescripcion.Text = "";
             // 
-            // btnGuardar
+            // btnMostrar
             // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(415, 560);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(225, 30);
-            this.btnGuardar.TabIndex = 25;
-            this.btnGuardar.Text = "MOSTRAR DATOS";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
+            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrar.Location = new System.Drawing.Point(415, 560);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(225, 30);
+            this.btnMostrar.TabIndex = 25;
+            this.btnMostrar.Text = "MOSTRAR DATOS";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // lblEmail
             // 
@@ -354,16 +354,16 @@
             this.txtCelular.Size = new System.Drawing.Size(133, 28);
             this.txtCelular.TabIndex = 29;
             // 
-            // button1
+            // btnBorrar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(156, 560);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 30);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "BORRAR DATOS";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.Location = new System.Drawing.Point(156, 560);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(225, 30);
+            this.btnBorrar.TabIndex = 30;
+            this.btnBorrar.Text = "BORRAR DATOS";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnCerrar
             // 
@@ -387,7 +387,7 @@
             this.lblConfirme.TabIndex = 32;
             this.lblConfirme.Text = "CONFIRME DATOS PARA CONTINUAR";
             // 
-            // Form1
+            // fDATOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -396,21 +396,21 @@
             this.ClientSize = new System.Drawing.Size(1075, 788);
             this.Controls.Add(this.lblConfirme);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.txtCelular);
             this.Controls.Add(this.lblCelular);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.txaDescripcion);
+            this.Controls.Add(this.btnMostrar);
+            this.Controls.Add(this.rtbDescripcion);
             this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.rbtF);
-            this.Controls.Add(this.rbtM);
+            this.Controls.Add(this.rbtFemenino);
+            this.Controls.Add(this.rbtMasculino);
             this.Controls.Add(this.lblSexo);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblECU);
             this.Controls.Add(this.txtLugar);
             this.Controls.Add(this.lblLugar);
-            this.Controls.Add(this.dateNacimiento);
+            this.Controls.Add(this.dtpNacimiento);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblEcuatoriano);
             this.Controls.Add(this.lblNacionalidad);
@@ -419,7 +419,7 @@
             this.Controls.Add(this.lblNombres);
             this.Controls.Add(this.lblApellidos);
             this.Controls.Add(this.txtPasaporte);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblCodigoEcu);
             this.Controls.Add(this.lblP);
             this.Controls.Add(this.lblPasaporte);
             this.Controls.Add(this.lblCódigo);
@@ -429,7 +429,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "fDATOS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DATOS";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -446,7 +446,7 @@
         private System.Windows.Forms.Label lblCódigo;
         private System.Windows.Forms.Label lblPasaporte;
         private System.Windows.Forms.Label lblP;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblCodigoEcu;
         private System.Windows.Forms.TextBox txtPasaporte;
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.Label lblNombres;
@@ -455,21 +455,21 @@
         private System.Windows.Forms.Label lblNacionalidad;
         private System.Windows.Forms.Label lblEcuatoriano;
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.DateTimePicker dateNacimiento;
+        private System.Windows.Forms.DateTimePicker dtpNacimiento;
         private System.Windows.Forms.Label lblLugar;
         private System.Windows.Forms.TextBox txtLugar;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblECU;
         private System.Windows.Forms.Label lblSexo;
-        private System.Windows.Forms.RadioButton rbtM;
-        private System.Windows.Forms.RadioButton rbtF;
+        private System.Windows.Forms.RadioButton rbtMasculino;
+        private System.Windows.Forms.RadioButton rbtFemenino;
         private System.Windows.Forms.Button btnConfirmar;
-        private System.Windows.Forms.RichTextBox txaDescripcion;
-        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.RichTextBox rtbDescripcion;
+        private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblCelular;
         private System.Windows.Forms.TextBox txtCelular;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label lblConfirme;
     }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Servicios_Aeroportuarios
 {
 
-    public partial class DESTINOS : Form
+    public partial class fDESTINOS : Form
     {
         static public int numAsientoArg = 1;
         static public int numAsientoChi = 1;
@@ -31,7 +31,7 @@ namespace Servicios_Aeroportuarios
         }
 
         static public Aerolinea Info;
-        public DESTINOS()
+        public fDESTINOS()
         {
             InitializeComponent();
             Info.destino.paisSalida = "Ecuador";
@@ -145,14 +145,14 @@ namespace Servicios_Aeroportuarios
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            FACTURA factura = new FACTURA();
+            fFACTURA factura = new fFACTURA();
             this.Hide();
             factura.ShowDialog();
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Form1 datos = new Form1();
+            fDATOS datos = new fDATOS();
             this.Hide();
             datos.ShowDialog();
         }
